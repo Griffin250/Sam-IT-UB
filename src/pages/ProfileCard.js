@@ -49,7 +49,7 @@ const ProfileGrid = () => {
       name: "Liam Ribe",
       title: "CEO & Founder",
       description:
-        "Liam thrives on challenges at Sam-IT, blending his passion for development and business management while attending high school",
+        "Liam thrives on challenges at Sam-IT, blending his passion for development and business management",
       email: "liam@sam-it.no",
       phone: "94974070",
       image: liam,
@@ -58,7 +58,7 @@ const ProfileGrid = () => {
       name: "Isiah Tuyisenge",
       title: "CTO & Developer",
       description:
-        "Isiah excels in both frontend and backend development, delivering seamless solutions while balancing high school commitments",
+        "Isiah excels in both frontend and backend development, delivering seamless solutions",
       email: "isiah@sam-it.no",
       phone: "95837462",
       image: isiah,
@@ -67,7 +67,7 @@ const ProfileGrid = () => {
       name: "Emma Heitmann",
       title: "Business Manager",
       description:
-        "Emma is a business and product manager focused on optimizing web app performance and user experience while attending high school in ICT.",
+        "Emma is a business and product manager focused on optimizing web app performance and user experience.",
       email: "emma@sam-it.no",
       phone: "92345678",
       image: emma,
@@ -76,7 +76,7 @@ const ProfileGrid = () => {
       name: "Erland  Terkelsen",
       title: "UI/UX & Product Designer",
       description:
-        "Erland is a UI/UX & Product Designer, skilled in server solutions, ensuring scalability and security in all projects, pursuing high school in Web Designing",
+        "Erland is a UI/UX & Product Designer, skilled in server solutions, ensuring scalability and security in all projects.",
       email: "erland@sam-it.no",
       phone: "91234567",
       image: erland,
@@ -85,7 +85,7 @@ const ProfileGrid = () => {
 
   return (
     <div className="min-h-screen -mb-40 bg-gradient-to-b from-gray-200 to-blue-200 flex justify-center items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-8">
         {profiles.map((profile, index) => (
           <ProfileCard key={index} {...profile} />
         ))}
