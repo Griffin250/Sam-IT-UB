@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export const ConsultationBanner = () => {
 const scrollToTop = () =>{
-  window.scrollToTop({
+  window.scrollTo({
     top:0,
     behaviour:"smooth"
   })
