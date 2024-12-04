@@ -3,7 +3,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faYoutube, faGithub,
      faDiscord, faXTwitter} from '@fortawesome/free-brands-svg-icons';
 import logo from '../../assets/samit_logo.png'
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
+const scrollToTop = ()=>{
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+}
+
+
+
+
   return (
     <footer className="bg-[#0f172a] text-gray-300 pt-5 pb-2 px-4 sm:px-8 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
@@ -35,7 +46,7 @@ const Footer = () => {
           <h5 className="text-lg font-semibold mb-4">Company</h5>
           <ul className="space-y-2">
             <li className="cursor-pointer opacity-75 hover:opacity-100">About</li>
-            <li className="cursor-pointer opacity-75 hover:opacity-100">Blog</li>
+            <NavLink to="/blogPost" onClick={scrollToTop} > <li className="cursor-pointer opacity-75 hover:opacity-100">Blog</li></NavLink>
             <li className="cursor-pointer opacity-75 hover:opacity-100">Jobs</li>
             <li className="cursor-pointer opacity-75 hover:opacity-100">Press</li>
           </ul>

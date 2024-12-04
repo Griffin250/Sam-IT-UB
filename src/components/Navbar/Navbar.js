@@ -81,12 +81,17 @@ const Navbar = () => {
             </NavLink>
             <NavLink to="/projects" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Projects <FontAwesomeIcon icon={faChevronDown} />
+                Products <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
             <NavLink to="/services" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
                 Services <FontAwesomeIcon icon={faChevronDown} />
+              </li>
+            </NavLink>
+            <NavLink to="/support" onClick={scrollToTop}>
+              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+                Support <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
 
@@ -118,13 +123,13 @@ const Navbar = () => {
               className="text-gray-400 hover:text-white cursor-pointer h-6 md:block"
             />
           </form>
-
           <NavLink to={"/loginSignup"} onClick={scrollToTop}>
             {" "}
             <button className="hidden md:flex items-center space-x-1 border-orange-600 border hover:bg-orange-600 text-white py-1 px-3 rounded-lg font-bold text-xl">
               <span className="">Join Us</span>
             </button>
           </NavLink>
+         
 
           <img
             src={profileImage} // Replace with actual profile image URL

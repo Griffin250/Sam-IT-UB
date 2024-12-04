@@ -1,4 +1,5 @@
 import samEydeVgs from "../../assets/otherImages/Sameyde.vgs.jpg";
+import BlogPosts from "../../pages/BlogPost";
 import Product from "../../pages/Product";
 import ShowCase from "../../pages/ShowCase";
 import ConsultationBanner from "../ConsultationBanner";
@@ -235,9 +236,8 @@ export default function Example() {
           </div>
         </div>
       </div>
-
+      <BlogPosts />
       <ContactForm />
-      {/*<Banner /> */}
     </>
   );
 }

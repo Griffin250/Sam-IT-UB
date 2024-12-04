@@ -8,6 +8,7 @@ import LoginSignup from "./components/Auth/LoginSignup";
 import Chatbot from "../src/components/Layout/Chatbot";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
+import BlogPosts from "./pages/BlogPost";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const AppContent = () => {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/contactForm" element={<ContactForm />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/blogPost" element={<BlogPosts/>}/>
       </Routes>
       {!hideFooterOnLoginPage && <Footer />}
     </div>
