@@ -38,7 +38,7 @@ const LoginSignup = () => {
     <>
     <SmallNavBar />
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-bl from-blue-50 via-gray-100 to-blue-200 text-white">
-      <div className="w-full max-w-md bg-gray-900 rounded-lg shadow-md p-8 m-14">
+      <div className="w-full max-w-md bg-gray-900 rounded-lg shadow-md p-8 m-6">
         {/* Form Title */}
         <h1 className="text-2xl font-bold mb-6 text-center">{signState}</h1>
 
@@ -123,7 +123,7 @@ const LoginSignup = () => {
             </label>
           </div>
           <p className="text-orange-500 cursor-pointer hover:underline">
-            Forgoyt Password?
+            Forgot Password?
           </p>
         </div>
 
