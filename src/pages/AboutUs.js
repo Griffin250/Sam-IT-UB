@@ -2,11 +2,8 @@ import React from "react";
 import Team from "../assets/otherImages/Teams.png";
 import CEO from "../assets/otherImages/IT_Person.jpg";
 import { NavLink } from "react-router-dom";
-import Liam from '../assets/Team/Liam.png'
-import Isiah from '../assets/Team/Isiah.png'
-import Emma from '../assets/Team/Emma.png'
-import Erland from '../assets/Team/Erland.png'
 
+import ProfileCard from '../pages/ProfileCard'
 const AboutUs = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -17,17 +14,23 @@ const AboutUs = () => {
   return (
     <div className="bg-gray-50 mt-5">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-200 via-gray-100 text-gray-800 py-20 px-4 text-center justify-start">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
-        <p className="text-lg md:text-xl max-w-3xl mx-auto">
-          Sam-IT UB is a network of technology companies dedicated to
-          innovation, specializing in advanced solutions for digitalization,
-          engineering, and project management across diverse industries.
-          <br />
-          Our operations extend throughout Agder, from the beautiful coastline
-          of Sam Eyde Vgs to the scenic regions of Nothern Norway. We are
-          committed to delivering high-quality services and support to
-          businesses across the continent.
+      <section className="bg-gradient-to-br from-blue-300 via-gray-100 text-gray-800 py-20 px-4 text-center justify-start">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">About Sam-IT UB</h1>
+        <p className="text-lg md:text-xl max-w-5xl mx-auto">
+        SAM-IT is a student-driven company offering IT user support and
+          development services for both individuals and businesses. We provide
+          efficient, reliable solutions for your digital needs, whether it’s
+          technical support or web development.
+         
+        </p><br/><br/>
+        <p className="text-lg md:text-xl max-w-5xl mx-auto">
+        
+          At SAM-IT, we combine innovative thinking with hands-on expertise
+          to provide high-quality IT services. Our team of dedicated students
+          focuses on scalability, security, and seamless solutions, ensuring
+          your business operates smoothly in today’s tech-driven world. From
+          tailored web applications to personalized support, we’re here to
+          enhance your digital experience and help you succeed.
         </p>
       </section>
 
@@ -117,59 +120,12 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-4 px-4 md:px-8 bg-gradient-to-tl from-blue-200 via-gray-100">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          Meet Our Team
-        </h2>
-        <div className="grid md:grid-cols-4 gap-4">
-          {/* Team Member 1 */}
-          <div className="text-center">
-            <img
-              src={Liam}
-              alt="Team Member 1"
-              className="rounded-full mx-auto mb-4 h-40 w-40"
-            />
-            <h3 className="text-xl font-semibold text-gray-700">Liam Ribe</h3>
-            <p className="text-gray-600">CEO & Founder</p>
-          </div>
-          {/* Team Member 2 */}
-          <div className="text-center">
-            <img
-              src={Isiah}
-              alt="Team Member 2"
-              className="rounded-full mx-auto mb-4 h-40 w-40"
-            />
-            <h3 className="text-xl font-semibold text-gray-700">
-              I互iah Tuyisenge
-            </h3>
-            <p className="text-gray-600">CTO & Developer</p>
-          </div>
+      
 
-          {/* Team Member 3 */}
-          <div className="text-center">
-            <img
-              src={Emma}
-              alt="Team Member 3"
-              className="rounded-full mx-auto mb-4 h-40 w-40"
-            />
-            <h3 className="text-xl font-semibold text-gray-700">Emma Heitmann  </h3>
-            <p className="text-gray-600">Business Manager</p>
-          </div>
-             {/* Team Member 4 */}
-             <div className="text-center">
-            <img
-              src={Erland}
-              alt="Team Member 3"
-              className="rounded-full mx-auto mb-4 h-40 w-40"
-            />
-            <h3 className="text-xl font-semibold text-gray-700">Erland Terkelsen</h3>
-            <p className="text-gray-600">UI/UX Desinger & Product Designer</p>
-          </div>
-        </div>
-      </section>
+      <ProfileCard />
 
       {/* Call to Action */}
-      <section className="bg-gradient-to-br from-blue-200 via-gray-400 text-white py-12 text-center">
+      <section className="bg-gradient-to-br from-blue-200 via-gray-100 to-blue-200 text-gray-700 py-12 text-center">
         <h2 className="text-3xl font-bold mb-4">Ready to Partner With Us?</h2>
         <p className="text-lg mb-6">
           Let’s transform your business with expert IT solutions and

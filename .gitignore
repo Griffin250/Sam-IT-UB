@@ -21,3 +21,76 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import Liam from '../assets/Team/Liam.png'
+import Isiah from '../assets/Team/Isiah.png'
+import Emma from '../assets/Team/Emma.png'
+import Erland from '../assets/Team/Erland.png'
+
+
+<section className="py-4 px-4 md:px-8 bg-gradient-to-tl from-blue-200 via-gray-100">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          Meet Our Team
+        </h2>
+        <div className="grid md:grid-cols-4 gap-4">
+          {/* Team Member 1 */}
+          <div className="text-center">
+            <img
+              src={Liam}
+              alt="Team Member 1"
+              className="rounded-full mx-auto mb-4 h-40 w-40"
+            />
+            <h3 className="text-xl font-semibold text-gray-700">Liam Ribe</h3>
+            <p className="text-gray-600">CEO & Founder</p>
+          </div>
+          {/* Team Member 2 */}
+          <div className="text-center">
+            <img
+              src={Isiah}
+              alt="Team Member 2"
+              className="rounded-full mx-auto mb-4 h-40 w-40"
+            />
+            <h3 className="text-xl font-semibold text-gray-700">
+              I互iah Tuyisenge
+            </h3>
+            <p className="text-gray-600">CTO & Developer</p>
+          </div>
+
+          {/* Team Member 3 */}
+          <div className="text-center">
+            <img
+              src={Emma}
+              alt="Team Member 3"
+              className="rounded-full mx-auto mb-4 h-40 w-40"
+            />
+            <h3 className="text-xl font-semibold text-gray-700">Emma Heitmann  </h3>
+            <p className="text-gray-600">Business Manager</p>
+          </div>
+             {/* Team Member 4 */}
+             <div className="text-center">
+            <img
+              src={Erland}
+              alt="Team Member 3"
+              className="rounded-full mx-auto mb-4 h-40 w-40"
+            />
+            <h3 className="text-xl font-semibold text-gray-700">Erland Terkelsen</h3>
+            <p className="text-gray-600">UI/UX Desinger & Product Designer</p>
+          </div>
+        </div>
+      </section>
