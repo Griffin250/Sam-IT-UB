@@ -24,8 +24,8 @@ const AboutUs = () => {
           innovation, specializing in advanced solutions for digitalization,
           engineering, and project management across diverse industries.
           <br />
-          Our operations extend throughout Europe, from the beautiful coastline
-          of southern Portugal to the scenic regions of northern Sweden. We are
+          Our operations extend throughout Agder, from the beautiful coastline
+          of Sam Eyde Vgs to the scenic regions of Nothern Norway. We are
           committed to delivering high-quality services and support to
           businesses across the continent.
         </p>
@@ -140,7 +140,7 @@ const AboutUs = () => {
               className="rounded-full mx-auto mb-4 h-40 w-40"
             />
             <h3 className="text-xl font-semibold text-gray-700">
-              Isiah Tuyisenge
+              I互iah Tuyisenge
             </h3>
             <p className="text-gray-600">CTO & Developer</p>
           </div>

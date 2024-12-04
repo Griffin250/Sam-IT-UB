@@ -123,7 +123,7 @@ const LoginSignup = () => {
             </label>
           </div>
           <p className="text-orange-500 cursor-pointer hover:underline">
-            Need Help?
+            Forgoyt Password?
           </p>
         </div>
 
@@ -131,7 +131,7 @@ const LoginSignup = () => {
         <div className="mt-6 text-center text-sm text-gray-300">
           {signState === "Sign In" ? (
             <p>
-              New to GriffinTechs?{" "}
+              New to Sam-IT?{" "}
               <span
                 onClick={() => setSignState("Sign Up")}
                 className="text-orange-500 font-medium cursor-pointer hover:underline"

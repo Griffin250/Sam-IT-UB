@@ -94,19 +94,20 @@ const Navbar = () => {
               </li>
             </NavLink>
           </ul>
-          <form>
-            <input type="search" placeholder="Search here..." className="bg-inherit border border-gray-400 rounded p-1 outline-none"/>
+          <form className="border border-gray-400 rounded p-1 flex">
+            <input type="search" placeholder="Search here..." className="bg-inherit  outline-none"/>
+            <FontAwesomeIcon
+            icon={faSearch}
+            className="text-gray-400 hover:text-white cursor-pointer h-6 md:block absolute float-right hidden"
+          />
           </form>
         </div>
 
         {/* Right side - New Job Button, Notification Icon, Profile */}
         <div className="flex items-center space-x-6">
           <form className="searchForm flex" method="get">
-            <input type="seacrh" placeholder="Search here..."  className="hidden"/> 
-          <FontAwesomeIcon
-            icon={faSearch}
-            className="text-gray-400 hover:text-white cursor-pointer h-6 md:block"
-          />
+            <input type="search" placeholder="Search here..."  className="hidden"/> 
+          
           </form>
          
           <NavLink to={"/loginSignup"} onClick={scrollToTop}>
