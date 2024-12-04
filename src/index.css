@@ -10,7 +10,7 @@
 html, body{
     overscroll-behavior: none;
     padding-top: 0;
-    background:linear-gradient(to left, rgb(219, 232, 242) 10%, rgb(247, 240, 249) 90%);
+    
 }
 .website-title{
     font-weight: bold;

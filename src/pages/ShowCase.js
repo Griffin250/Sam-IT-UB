@@ -30,7 +30,7 @@ const ShowCase = () => {
   ];
 
   return (
-    <div className="p-6 md:p-12 m-2 rounded text-gray-800 mt-24">
+    <div className="p-6 md:p-12 m-2 rounded text-gray-800 mt-24 bg-gradient-to-br from-blue-200 via-gray-100">
       {/* Section Title */}
       <div className="border-t border-gray-500 w-48 mb-4"></div>
       <h1 className="text-4xl font-bold mb-8 text-center">Why choose Sam-IT?</h1>

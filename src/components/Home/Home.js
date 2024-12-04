@@ -22,7 +22,7 @@ export default function Example() {
     <>
       <ShowCase />
 
-      <div className="bg-gray-200 py-12 px-6 md:px-16 lg:px-24">
+      <div className="bg-blue-50 py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Heading */}
 
