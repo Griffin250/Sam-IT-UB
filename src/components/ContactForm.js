@@ -22,7 +22,6 @@ const ContactForm = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [message, setMessage] = useState("");
 
-  // Please update the Access Key in the .env
   const apiKey =
     process.env.PUBLIC_ACCESS_KEY || "cd08b0b5-c66e-4342-9e74-8c3d55fbeb33";
 
@@ -37,7 +36,6 @@ const ContactForm = () => {
       setMessage("Message sent successfully!");
       reset();
 
-      // Hide the popup after 5 seconds
       setTimeout(() => {
         setIsSuccess(false);
         setMessage("");
@@ -55,7 +53,6 @@ const ContactForm = () => {
       <div className="flex flex-col mb-8 md:mb-0 md:w-1/3 mt-32">
         <div className="border-t border-gray-500 w-8 mb-2"></div>
         <h2 className="text-2xl font-semibold mb-4">Connect with us</h2>
-
         <p className="text-blue-600 mb-4">
           <a
             href="mailto:sam-it-ub@hotmail.com"
@@ -69,10 +66,9 @@ const ContactForm = () => {
             +47 429-474 90{" "}
           </a>
         </p>
-
         <h3 className="text-lg font-semibold mb-2">Arendal, Norway</h3>
         <a
-          href="https://www.google.com/maps/place/Sam+Eyde+high+school/@58.480899,8.723333,17z/data=!3m1!4b1!4m6!3m5!1s0x464794c3cc8a9ccd:0xee8dfbab565a402!8m2!3d58.480899!4d8.723333!16s%2Fg%2F122b8z26?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D"
+          href="https://www.google.com/maps/place/Sam+Eyde+high+school"
           className="text-blue-600 mb-4 hover:text-orange-700"
           target="blank"
         >
@@ -80,7 +76,6 @@ const ContactForm = () => {
           <br />
           4848 Arendal
         </a>
-
         <div className="flex space-x-4 mt-4">
           <a
             href="#Home"
@@ -154,7 +149,7 @@ const ContactForm = () => {
           </div>
 
           <div className="flex flex-col w-full md:w-1/2 md:mt-0 mt-4">
-            <label className="text-sm font-semibold">Last Name</label>
+            <label className="text-sm font-semibold">Last Name (required)</label>
             <input
               type="text"
               placeholder="Last Name"
@@ -202,6 +197,32 @@ const ContactForm = () => {
           )}
         </div>
 
+        {/* Genre Section */}
+        <div className="genre w-full px-4 py-3 border rounded-md outline-none focus:ring-4">
+          <select
+            className={`bg-inherit text-gray-800 border-none outline-none w-full`}
+            required
+            defaultValue=""
+            {...register("genre", {
+              required: "Please select a support genre",
+            })}
+          >
+            <option value="" disabled>
+              Select the type of support you need (required)
+            </option>
+            <option value="domain">Buy Domain</option>
+            <option value="hosting">Web Hosting Support</option>
+            <option value="seo">SEO Optimization</option>
+            <option value="development">Web Development Assistance</option>
+            <option value="maintenance">Website Maintenance</option>
+          </select>
+          {errors.genre && (
+            <div className="mt-1 text-red-600">
+              <small>{errors.genre.message}</small>
+            </div>
+          )}
+        </div>
+
         <div className="mb-3">
           <textarea
             name="message"
@@ -217,12 +238,12 @@ const ContactForm = () => {
           />
           {errors.message && (
             <div className="mt-1 text-red-600">
-              {" "}
               <small>{errors.message.message}</small>
             </div>
           )}
         </div>
-        {/* Success Message Popup */}
+
+        {/* Success Message */}
         {isSuccess && message && (
           <div className="bg-green-500 text-white px-4 py-2 rounded-md shadow-lg text-center">
             {message}
@@ -230,31 +251,37 @@ const ContactForm = () => {
         )}
         <button
           type="submit"
-          className="bg-blue-600 text-white p-2 rounded font-semibold hover:bg-blue-700"
+          className="py-3 px-6 rounded-md text-white bg-blue-500 flex items-center justify-center w-full mt-4"
         >
           {isSubmitting ? (
-            <svg
-              className="w-5 h-5 mx-auto text-white animate-spin"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
+            <>
+              <svg
+                className="animate-spin h-5 w-5 mr-3"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
                 stroke="currentColor"
-                strokeWidth="4"
-              ></circle>
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              ></path>
-            </svg>
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  className="opacity-25"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                  d="M4 12a8 8 0 0 1 16 0"
+                  className="opacity-75"
+                />
+              </svg>
+              Submitting...
+            </>
           ) : (
-            "Send Message"
+            "Submit"
           )}
         </button>
       </form>
