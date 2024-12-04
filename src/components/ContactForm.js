@@ -211,7 +211,7 @@ const ContactForm = () => {
           >
             
             <option value="" disabled>
-              Select the type of support you need (required)
+              Select the type of support you need
             </option>
             <option value="Buy Domain">Buy Domain</option>
             <option value="Web Hosting Support">Web Hosting Support</option>
