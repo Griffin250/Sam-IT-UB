@@ -2,20 +2,20 @@ import React from "react";
 
 const WhoAreWe = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-16">
+    <div className="min-h-screen flex flex-col justify-center bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-16 mt-12">
       {/* Title Section */}
-      <div className="text-center px-4 mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+      <div className=" px-4 mb-8">
+        <h1 className="text-4xl text-center md:text-5xl font-bold text-gray-900">
           Who Are We?
         </h1>
-        <p className="mt-4 text-lg text-gray-800 max-w-5xl mx-auto">
+        <p className="mt-4 text-lg text-gray-800 max-w-5xl m-auto">
           SAM-IT UB is a student-driven company offering IT user support and
           development services for both individuals and businesses. We provide
           efficient, reliable solutions for your digital needs, whether it’s
           technical support or web development.
         </p>
         <br/>
-        <p className="mt-4 text-lg text-gray-600 max-w-5xl mx-auto text-center justify-start">
+        <p className="mt-4 text-lg text-gray-600 max-w-5xl m-auto">
           At SAM-IT UB, we combine innovative thinking with hands-on expertise
           to provide high-quality IT services. Our team of dedicated students
           focuses on scalability, security, and seamless solutions, ensuring

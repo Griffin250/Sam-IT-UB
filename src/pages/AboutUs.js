@@ -14,8 +14,8 @@ const AboutUs = () => {
   return (
     <div className="bg-gray-50 mt-5">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-300 via-gray-100 text-gray-800 py-20 px-4 text-center justify-start">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">About Sam-IT UB</h1>
+      <section className="bg-gradient-to-br from-blue-300 via-gray-100 text-gray-800 py-20 px-4">
+        <h1 className="text-4xl md:text-5xl text-center font-bold mb-4">About Sam-IT UB</h1>
         <p className="text-lg md:text-xl max-w-5xl mx-auto">
         SAM-IT is a student-driven company offering IT user support and
           development services for both individuals and businesses. We provide
