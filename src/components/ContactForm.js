@@ -50,8 +50,9 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between p-6 md:p-12 bg-gradient-to-br from-blue-200 via-gray-100 text-gray-800">
       {/* Left Section */}
-      <div className="flex flex-col mb-8 md:mb-0 md:w-1/3 mt-32">
-        <div className="border-t border-gray-500 w-8 mb-2"></div>
+
+      <div className="flex flex-col mb-8 md:mb-0 md:w-1/3 mt-32 m-auto">
+        <div className="border-t border-gray-500 w-24 mb-2"></div>
         <h2 className="text-2xl font-semibold mb-4">Connect with us</h2>
         <p className="text-blue-600 mb-4">
           <a
@@ -198,25 +199,28 @@ const ContactForm = () => {
             </div>
           )}
         </div>
-
         {/* Genre Section */}
-        <div className="genre w-full px-4 py-3 border rounded-md outline-none focus:ring-4">
+        <div
+          className="genre w-full px-4 py-3 border rounded-md outline-none focus:ring-4 
+        border-gray-300 focus:border-blue-400 ring-gray-100 cursor-pointer"
+        >
           <select
-            className={`bg-inherit text-gray-800 border-none outline-none w-full`}
+            className={"bg-inherit text-gray-800 border-none outline-none w-full cursor-pointer"}
             required
             defaultValue=""
             {...register("genre", {
               required: "Please select a support genre",
             })}
           >
-            
             <option value="" disabled>
               Select the type of support you need
             </option>
-            <option value="Buy Domain">Buy Domain</option>
-            <option value="Web Hosting Support">Web Hosting Support</option>
-            <option value="SEO Optimization">SEO Optimization</option>
-            <option value="Web Development Assistance">Web Development Assistance</option>
+            <option value="Buy Domain " className="cursor-pointer">Buy Domain</option>
+            <option value="Web Hosting Support " className="cursor-pointer">Web Hosting Support</option>
+            <option value="SEO Optimization " className="cursor-pointer">SEO Optimization</option>
+            <option value="Web Development Assistance " className="cursor-pointer">
+              Web Development Assistance
+            </option>
             <option value="Website Maintenance">Website Maintenance</option>
           </select>
           {errors.genre && (
@@ -281,7 +285,6 @@ const ContactForm = () => {
                   className="opacity-75"
                 />
               </svg>
-              
             </>
           ) : (
             "Submit"
