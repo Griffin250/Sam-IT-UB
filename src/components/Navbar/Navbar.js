@@ -87,22 +87,16 @@ const Navbar = () => {
                 Services <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
-            <NavLink to="/developers" onClick={scrollToTop}>
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Developers <FontAwesomeIcon icon={faChevronDown} />
-              </li>
-            </NavLink>
+            
             <NavLink to="/contactForm" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
                 Contact
               </li>
             </NavLink>
-            <NavLink to="/community" onClick={scrollToTop}>
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Community
-              </li>
-            </NavLink>
           </ul>
+          <form>
+            <input type="search" placeholder="Search here..." className="bg-inherit border border-gray-400 rounded p-1 outline-none"/>
+          </form>
         </div>
 
         {/* Right side - New Job Button, Notification Icon, Profile */}
@@ -167,21 +161,11 @@ const Navbar = () => {
                 Projects <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
-            <NavLink to="/developers" onClick={() => {scrollToTop(); setMobileMenuOpen(false);}}>
-              {" "}
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Developers <FontAwesomeIcon icon={faChevronDown} />
-              </li>
-            </NavLink>
+          
             <NavLink to="/contactForm" onClick={()=> {scrollToTop(); setMobileMenuOpen(false); }}>
               {" "}
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
                 Contact
-              </li>
-            </NavLink>
-            <NavLink to="/community" onClick={() => {scrollToTop(); setMobileMenuOpen(false);}}>
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Community
               </li>
             </NavLink>
           </ul>

@@ -149,7 +149,9 @@ const ContactForm = () => {
           </div>
 
           <div className="flex flex-col w-full md:w-1/2 md:mt-0 mt-4">
-            <label className="text-sm font-semibold">Last Name (required)</label>
+            <label className="text-sm font-semibold">
+              Last Name (required)
+            </label>
             <input
               type="text"
               placeholder="Last Name"
@@ -207,14 +209,15 @@ const ContactForm = () => {
               required: "Please select a support genre",
             })}
           >
+            
             <option value="" disabled>
               Select the type of support you need (required)
             </option>
-            <option value="domain">Buy Domain</option>
-            <option value="hosting">Web Hosting Support</option>
-            <option value="seo">SEO Optimization</option>
-            <option value="development">Web Development Assistance</option>
-            <option value="maintenance">Website Maintenance</option>
+            <option value="Buy Domain">Buy Domain</option>
+            <option value="Web Hosting Support">Web Hosting Support</option>
+            <option value="SEO Optimization">SEO Optimization</option>
+            <option value="Web Development Assistance">Web Development Assistance</option>
+            <option value="Website Maintenance">Website Maintenance</option>
           </select>
           {errors.genre && (
             <div className="mt-1 text-red-600">
@@ -226,7 +229,7 @@ const ContactForm = () => {
         <div className="mb-3">
           <textarea
             name="message"
-            placeholder="Enter Your Message..."
+            placeholder="Please provide details about the support you need..."
             className={`w-full px-4 py-3 border placeholder:text-gray-800 rounded-md outline-none h-36 focus:ring-4 ${
               errors.message
                 ? "border-red-600 focus:border-red-600 ring-red-100"
@@ -251,7 +254,7 @@ const ContactForm = () => {
         )}
         <button
           type="submit"
-          className="py-3 px-6 rounded-md text-white bg-blue-500 flex items-center justify-center w-full mt-4"
+          className="py-3 px-6 rounded-md text-white bg-blue-600 flex items-center justify-center w-full mt-4  hover:bg-blue-700"
         >
           {isSubmitting ? (
             <>
@@ -278,7 +281,7 @@ const ContactForm = () => {
                   className="opacity-75"
                 />
               </svg>
-              Submitting...
+              
             </>
           ) : (
             "Submit"

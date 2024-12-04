@@ -10,11 +10,7 @@
 html, body{
     overscroll-behavior: none;
 }
-.genre select {
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none; /* Safari and Chrome */
-  appearance: none; /* Standard syntax */
-}
+
 
 .website-title{
     font-weight: bold;

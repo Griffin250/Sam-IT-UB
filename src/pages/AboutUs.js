@@ -2,6 +2,10 @@ import React from "react";
 import Team from "../assets/otherImages/Teams.png";
 import CEO from "../assets/otherImages/IT_Person.jpg";
 import { NavLink } from "react-router-dom";
+import Liam from '../assets/Team/Liam.png'
+import Isiah from '../assets/Team/Isiah.png'
+import Emma from '../assets/Team/Emma.png'
+import Erland from '../assets/Team/Erland.png'
 
 const AboutUs = () => {
   const scrollToTop = () => {
@@ -16,7 +20,7 @@ const AboutUs = () => {
       <section className="bg-gradient-to-br from-blue-200 via-gray-100 text-gray-800 py-20 px-4 text-center justify-start">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
         <p className="text-lg md:text-xl max-w-3xl mx-auto">
-          GriffinTechs is a network of technology companies dedicated to
+          Sam-IT UB is a network of technology companies dedicated to
           innovation, specializing in advanced solutions for digitalization,
           engineering, and project management across diverse industries.
           <br />
@@ -113,42 +117,53 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 px-4 md:px-20 bg-gradient-to-tl from-blue-200 via-gray-100">
+      <section className="py-4 px-4 md:px-8 bg-gradient-to-tl from-blue-200 via-gray-100">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
           Meet Our Team
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-4">
           {/* Team Member 1 */}
           <div className="text-center">
             <img
-              src={CEO}
+              src={Liam}
               alt="Team Member 1"
               className="rounded-full mx-auto mb-4 h-40 w-40"
             />
-            <h3 className="text-xl font-semibold text-gray-700">John Doe</h3>
+            <h3 className="text-xl font-semibold text-gray-700">Liam Ribe</h3>
             <p className="text-gray-600">CEO & Founder</p>
           </div>
           {/* Team Member 2 */}
           <div className="text-center">
             <img
-              src={CEO}
+              src={Isiah}
               alt="Team Member 2"
               className="rounded-full mx-auto mb-4 h-40 w-40"
             />
             <h3 className="text-xl font-semibold text-gray-700">
-              Sean Griffin
+              Isiah Tuyisenge
             </h3>
             <p className="text-gray-600">CTO & Developer</p>
           </div>
+
           {/* Team Member 3 */}
           <div className="text-center">
             <img
-              src={CEO}
+              src={Emma}
               alt="Team Member 3"
               className="rounded-full mx-auto mb-4 h-40 w-40"
             />
-            <h3 className="text-xl font-semibold text-gray-700"> Brown Lee </h3>
-            <p className="text-gray-600">Senior Consultant</p>
+            <h3 className="text-xl font-semibold text-gray-700">Emma Heitmann  </h3>
+            <p className="text-gray-600">Business Manager</p>
+          </div>
+             {/* Team Member 4 */}
+             <div className="text-center">
+            <img
+              src={Erland}
+              alt="Team Member 3"
+              className="rounded-full mx-auto mb-4 h-40 w-40"
+            />
+            <h3 className="text-xl font-semibold text-gray-700">Erland Terkelsen</h3>
+            <p className="text-gray-600">UI/UX Desinger & Product Designer</p>
           </div>
         </div>
       </section>
