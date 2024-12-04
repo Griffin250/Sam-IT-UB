@@ -3,14 +3,14 @@ import React from 'react'
 const Services = () => {
   return (
     <div className="bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-12 px-6 md:px-16 lg:px-24 mt-12">
-    <div className="max-w-4xl mx-auto text-center">
+    <div className="max-w-4xl mx-auto">
       {/* Heading */}
 
-      <h2 className="text-5xl font-bold text-gray-700 mb-4">
+      <h2 className="text-5xl font-bold text-gray-700 mb-4 text-center">
         Our Services
       </h2>
       {/* Subtitle */}
-      <h3 className="text-gray-600 text-2xl mb-8">
+      <h3 className="text-gray-600 text-2xl mb-8 text-center">
         The Best Defense is a Good Offense.
       </h3>
       {/* Description */}
