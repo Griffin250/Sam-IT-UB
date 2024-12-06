@@ -1,5 +1,4 @@
 import React from "react";
-import Teams from "../assets/otherImages/Teams.png";
 import CEO from "../assets/otherImages/Tech.png";
 import Team from "../assets/Team/Liam_Emma.png"
 import Developers from "../assets/otherImages/Isiah_Emma.png";

@@ -233,24 +233,6 @@ const BlogPosts = () => {
 
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
-              src={Team}
-              alt="New offices in Arendal"
-              className="w-full h-40 object-cover rounded-md mb-4"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              New offices in Arendal
-            </h3>
-            <p className="text-gray-600 text-sm">
-              We at Advantek are delighted to announce that we are expanding our
-              presence by opening new offices in the charming town of...
-            </p>
-            <a href="#NoLink" className="text-blue-500 mt-4 block">
-              Learn More &rarr;
-            </a>
-          </div>
-
-          <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
-            <img
               src={UpcomingEvent}
               alt="New offices in Arendal"
               className="w-full h-40 object-cover rounded-md mb-4"
@@ -277,24 +259,6 @@ const BlogPosts = () => {
           </div>
 
           {/* Repeat for other blog posts */}
-
-          <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
-            <img
-              src={Developer}
-              alt="Factors to consider when choosing an employer as a developer"
-              className="w-full h-40 object-cover rounded-md mb-4"
-            />
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">
-              Factors to consider when choosing an employer as a developer
-            </h3>
-            <p className="text-gray-600 text-sm">
-              It is important to find an employer that aligns with your values
-              and work style. If you value work-life balance, you should...
-            </p>
-            <a href="NoLink" className="text-blue-500 mt-4 block">
-              Learn More &rarr;
-            </a>
-          </div>
         </div>
 
         {/* Pagination Dots */}
