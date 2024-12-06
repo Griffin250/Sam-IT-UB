@@ -11,6 +11,9 @@ html, body{
     overscroll-behavior: none;
 }
 
+.blog-section{
+  width: 92%;
+}
 
 .website-title{
     font-weight: bold;
