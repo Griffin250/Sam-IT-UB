@@ -1,7 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import Team from "../assets/otherImages/BlogImages/Liam_Emma.png";
-import Developer from "../assets/otherImages/BlogImages/Developer.JPG";
-
 import Technician from "../assets/otherImages/BlogImages/Technician.png";
 import HackerBanner from "../assets/otherImages/IT_Person.jpg";
 import Students from "../assets/otherImages/BlogImages/Isiah_Emma.png";
