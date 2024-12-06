@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import blogImage from '../assets/otherImages/IT_Person.jpg'
 import Team from '../assets/otherImages/BlogImages/Liam_Emma.png'
 import Developer from '../assets/otherImages/BlogImages/Developer.JPG'
 import samEydeVgs from '../assets/otherImages/IT_Person.jpg'
