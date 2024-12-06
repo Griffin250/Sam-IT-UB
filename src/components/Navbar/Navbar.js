@@ -6,7 +6,7 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import profileImage from "../../assets/Icons/Language_1.png";
-import website_logo from "../../assets/otherImages/Logo.png";
+import website_logo from "../../assets/Website_logo.png"
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -59,7 +59,7 @@ const Navbar = () => {
             <img
               src={website_logo}
               alt=""
-              className="rounded-full sm:w-30 sm:h-20 w-3/4 sm:w-40 sm:h-30"
+              className="rounded-full sm:w-30 sm:h-20 w-3/5 sm:w-52 sm:h-30"
             />
           </NavLink>
         </div>

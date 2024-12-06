@@ -65,7 +65,7 @@ const ProfileGrid = () => {
     },
     {
       name: "Emma Heitmann",
-      title: "Business Manager",
+      title: "Business & Marketing Manager",
       description:
         "Emma is a business and product manager focused on optimizing web app performance and user experience.",
       email: "emma@sam-it.no",
@@ -73,10 +73,10 @@ const ProfileGrid = () => {
       image: emma,
     },
     {
-      name: "Erland  Terkelsen",
+      name: "Erlend  Terkelsen",
       title: "UI/UX & Product Designer",
       description:
-        "Erland is a UI/UX & Product Designer, skilled in server solutions, ensuring scalability and security in all projects.",
+        "Erlend is a UI/UX & Product Designer, skilled in server solutions, ensuring scalability and security in all projects.",
       email: "erland@sam-it.no",
       phone: "91234567",
       image: erland,
