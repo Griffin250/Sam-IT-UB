@@ -10,6 +10,9 @@ import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import BlogPosts from "./pages/BlogPost";
 import Services from "./pages/Services";
+import Product from "./pages/Product";
+import Support from "./pages/Support";
+
 
 const App = () => {
   return (
@@ -32,6 +35,8 @@ const AppContent = () => {
         <Route path="/loginSignup" element={<LoginSignup />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/services" element={<Services/>}/>
+        <Route path="/products" element={<Product/>}/>
+        <Route path="/support" element={<Support />}/>
         <Route path="/contactForm" element={<ContactForm />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/blogPost" element={<BlogPosts/>}/>

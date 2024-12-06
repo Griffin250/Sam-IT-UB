@@ -79,11 +79,7 @@ const Navbar = () => {
                 About
               </li>
             </NavLink>
-            <NavLink to="/projects" onClick={scrollToTop}>
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Products <FontAwesomeIcon icon={faChevronDown} />
-              </li>
-            </NavLink>
+          
             <NavLink to="/services" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
                 Services <FontAwesomeIcon icon={faChevronDown} />
@@ -129,8 +125,6 @@ const Navbar = () => {
               <span className="">Join Us</span>
             </button>
           </NavLink>
-         
-
           <img
             src={profileImage} // Replace with actual profile image URL
             alt="Profile"
@@ -189,7 +183,7 @@ const Navbar = () => {
               </li>
             </NavLink>
             <NavLink
-              to="/projects"
+              to="/support"
               onClick={() => {
                 scrollToTop();
                 setMobileMenuOpen(false);
@@ -197,7 +191,7 @@ const Navbar = () => {
             >
               {" "}
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Projects <FontAwesomeIcon icon={faChevronDown} />
+                Support <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
 

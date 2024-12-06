@@ -23,7 +23,7 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   const apiKey =
-    process.env.PUBLIC_ACCESS_KEY || "cd08b0b5-c66e-4342-9e74-8c3d55fbeb33";
+    process.env.PUBLIC_ACCESS_KEY || "9fc08eca-e77f-4a6e-b1ca-734873306e4f";
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,

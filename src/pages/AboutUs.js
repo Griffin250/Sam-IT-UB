@@ -1,6 +1,8 @@
 import React from "react";
-import Team from "../assets/otherImages/Teams.png";
-import CEO from "../assets/otherImages/IT_Person.jpg";
+import Teams from "../assets/otherImages/Teams.png";
+import CEO from "../assets/otherImages/Tech.png";
+import Team from "../assets/Team/Liam_Emma.png"
+import Developer from "../assets/otherImages/Developer.JPG";
 import { NavLink } from "react-router-dom";
 
 import ProfileCard from '../pages/ProfileCard'
@@ -63,7 +65,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div>
-            <img src={Team} alt="Vision" className="rounded-lg shadow-lg" />
+            <img src={Developer} alt="Vision" className="rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -90,7 +92,7 @@ const AboutUs = () => {
           </div>
           <div className="text-center">
             <img
-              src={Team}
+              src={Teams}
               alt="Tailored Solutions"
               className="mx-auto mb-4 rounded"
             />

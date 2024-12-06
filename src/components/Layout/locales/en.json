@@ -1,0 +1,36 @@
+{
+    "header": {
+      "logo": "My App",
+      "nav": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "contact": "Contact"
+      },
+      "language": "Language"
+    },
+    "home": {
+      "title": "Welcome to Our Website",
+      "subtitle": "We provide the best solutions for your needs.",
+      "cta": "Learn More",
+      "input_placeholder": "Search here..."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "We are a dedicated team of professionals passionate about technology and innovation."
+    },
+    "services": {
+      "title": "Our Services",
+      "list": {
+        "web_dev": "Web Development",
+        "app_dev": "App Development",
+        "consulting": "IT Consulting"
+      }
+    },
+    "footer": {
+      "copy": "© 2024 My App. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+  

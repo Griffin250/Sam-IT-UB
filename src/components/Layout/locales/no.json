@@ -1,0 +1,36 @@
+{
+    "header": {
+      "logo": "Min App",
+      "nav": {
+        "home": "Hjem",
+        "about": "Om Oss",
+        "services": "Tjenester",
+        "contact": "Kontakt"
+      },
+      "language": "Språk"
+    },
+    "home": {
+      "title": "Velkommen til vår nettside",
+      "subtitle": "Vi tilbyr de beste løsningene for dine behov.",
+      "cta": "Lær Mer",
+      "input_placeholder": "Søk her..."
+    },
+    "about": {
+      "title": "Om Oss",
+      "description": "Vi er et dedikert team av fagfolk som brenner for teknologi og innovasjon."
+    },
+    "services": {
+      "title": "Våre Tjenester",
+      "list": {
+        "web_dev": "Webutvikling",
+        "app_dev": "Apputvikling",
+        "consulting": "IT-rådgivning"
+      }
+    },
+    "footer": {
+      "copy": "© 2024 Min App. Alle rettigheter reservert.",
+      "privacy": "Personvern",
+      "terms": "Vilkår for bruk"
+    }
+  }
+  
