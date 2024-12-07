@@ -6,7 +6,7 @@ import {
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
 import profileImage from "../../assets/Icons/Language_1.png";
-import website_logo from "../../assets/Website_logo.png"
+import website_logo from "../../assets/Website_logo.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -62,6 +62,10 @@ const Navbar = () => {
               className="rounded-full sm:w-30 sm:h-20 w-3/5 sm:w-52 sm:h-30"
             />
           </NavLink>
+          <FontAwesomeIcon
+                icon={faSearch}
+                className="absolute right-16 text-gray-200 h-5 cursor-pointer hover:text-orange-600 md:hidden"
+              />
         </div>
 
         {/* Navigation Links - Hidden on small screens */}
@@ -79,15 +83,15 @@ const Navbar = () => {
                 About
               </li>
             </NavLink>
-          
+
             <NavLink to="/services" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Services <FontAwesomeIcon icon={faChevronDown} />
+                Services 
               </li>
             </NavLink>
             <NavLink to="/support" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Support <FontAwesomeIcon icon={faChevronDown} />
+                Support {/*.....<FontAwesomeIcon icon={faChevronDown} />......*/}
               </li>
             </NavLink>
 
@@ -97,31 +101,27 @@ const Navbar = () => {
               </li>
             </NavLink>
           </ul>
-          <form>
-            <input
-              type="search"
-              placeholder="Search here..."
-              className="bg-inherit border border-gray-400 rounded p-1 outline-none"
-            />
+
+          <form className="searchForm flex items-center w-4/5" method="get">
+            <label className="relative flex items-center w-3/4 ml-12">
+              <input
+                type="search"
+                placeholder="Search here..."
+                className="w-full p-2 pl-4 pr-10 border border-gray-300 rounded-lg shadow-sm outline-none focus:ring-1 focus:ring-orange-400"
+              />
+              <FontAwesomeIcon
+                icon={faSearch}
+                className="absolute right-3 text-gray-700  text-xl cursor-pointer hover:text-orange-600"
+              />
+            </label>
           </form>
         </div>
 
         {/* Right side - New Job Button, Notification Icon, Profile */}
         <div className="flex items-center space-x-6">
-          <form className="searchForm flex" method="get">
-            <input
-              type="search"
-              placeholder="Search here..."
-              className="hidden"
-            />
-            <FontAwesomeIcon
-              icon={faSearch}
-              className="text-gray-400 hover:text-white cursor-pointer h-6 md:block"
-            />
-          </form>
           <NavLink to={"/loginSignup"} onClick={scrollToTop}>
             {" "}
-            <button className="hidden md:flex items-center space-x-1 border-orange-600 border hover:bg-orange-600 text-white py-1 px-3 rounded-lg font-bold text-xl">
+            <button className="hidden md:flex items-center space-x-1  bg-orange-600 hover:bg-orange-700 text-white py-1 px-3 rounded-lg font-bold text-xl">
               <span className="">Join Us</span>
             </button>
           </NavLink>
@@ -137,7 +137,7 @@ const Navbar = () => {
               className="text-gray-400 hover:text-white focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <FontAwesomeIcon icon={faBars} className="h-6" />
+              <FontAwesomeIcon icon={faBars} className="h-6 hover:text-orange-600" />
             </button>
           </div>
         </div>
