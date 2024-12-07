@@ -14,9 +14,9 @@ const links = [
   { name: "Meet our leadership", href: "#" },
 ];
 const stats = [
-  { name: "Offices worldwide", value: "12" },
+  { name: "Offices worldwide", value: "4" },
   { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
+  { name: "Hours per week", value: "36" },
   { name: "Paid time off", value: "Unlimited" },
 ];
 
@@ -61,7 +61,7 @@ export default function Example() {
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center align-middle justify-center">
           <div className="mx-auto max-w-4xl lg:mx-0">
-            <h3 className="text-5xl font-semibold tracking-tight text-white sm:text-8xl">
+            <h3 className="text-5xl font-semibold  text-white sm:text-8xl text-center m-auto">
               Partner with Sam-IT
             </h3>
             <p className="mt-8 text-pretty text-lg font-medium justify-center flex text-gray-300 sm:text-xl/8">
@@ -95,10 +95,10 @@ export default function Example() {
         </div>
       </div>
 
-      <div className="bg-gray-200 py-12 px-6 md:px-16 lg:px-24">
+      <div className="bg-gradient-to-bl from-blue-200 via-gray-200 to-blue-100 py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-5xl font-bold mb-2 text-gray-800">
             Lets bring your Dreams to Life
           </h2>
           {/* Subtitle */}
@@ -116,8 +116,8 @@ export default function Example() {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
           {/* Push to Deploy */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:bg-orange-600 hover:text-white text-gray-600  transition-shadow cursor-pointer">
-            <h3 className="text-xl font-semibold mb-2">Push to deploy</h3>
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card dream_card">
+            <h3 className="text-xl font-bold mb-2 text-gray-700">Push to deploy</h3>
             <p className=" ">
               Easily bring your applications to life with our streamlined
               deployment services. With just a few steps, your app can be live
@@ -128,8 +128,8 @@ export default function Example() {
           </div>
 
           {/* SSL Certificates */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg cursor-pointer hover:bg-orange-600 hover:text-white transition-shadow">
-            <h3 className="text-xl font-semibold mb-2">SSL certificates</h3>
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card">
+            <h3 className="text-xl font-bold mb-2 text-gray-700">SSL certificates</h3>
             <p className="">
               We take security seriously. All our services come with SSL
               certificates to protect your app and user data, ensuring a secure
@@ -139,9 +139,9 @@ export default function Example() {
               security standards.
             </p>
           </div>
-          {/* Simple Queues */}
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer hover:bg-orange-600 hover:text-white">
-            <h3 className="text-xl font-semibold mb-2">Reliable Support</h3>
+          {/* Simple Queues */} 
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card">
+            <h3 className="text-xl font-bold mb-2 text-gray-700">Reliable Support</h3>
             <p className="">
               Our team is dedicated to providing you with responsive,
               knowledgeable support.
@@ -153,10 +153,9 @@ export default function Example() {
           </div>
           {/* Advanced Security */}
           <div
-            className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer hover:bg-orange-600
-         hover:text-white hover:ease-in-out"
+            className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer hover:ease-in-out dream_card"
           >
-            <h3 className="text-xl font-semibold mb-2">Advanced security</h3>
+            <h3 className="text-xl font-bold mb-2 text-gray-700">Advanced security</h3>
             <p className="">
               Safeguard your application with advanced security measures
               tailored to your needs. <br />

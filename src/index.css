@@ -14,6 +14,20 @@ html, body{
 .blog-section{
   width: 92%;
 }
+
+.dream_card{
+  width: 100%;
+  height:1%;
+  background: linear-gradient(rgba(239, 138, 31, 0.2), #d4530e);
+  padding: 0 40px;
+  text-align:left;
+  font-size: 15px;
+  transition: height 0.5s;
+}
+
+.dream_card:hover{
+  height: 100%;
+}
 .website-title{
     font-weight: bold;
     font-family: sans-serif;

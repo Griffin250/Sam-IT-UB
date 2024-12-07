@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faFacebook, faYoutube, faGithub,
+     faDiscord, faXTwitter} from '@fortawesome/free-brands-svg-icons';
 
 const WhoAreWe = () => {
   return (
@@ -25,15 +28,35 @@ const WhoAreWe = () => {
         </p>
       </div>
 
+   
+
       {/* Button Section */}
-      <div className="text-center">
-        <a
-          href="#home"
-          className="mt-2 inline-block text-white bg-blue-500 hover:bg-blue-600 py-2 px-6 rounded-md text-lg"
-        >
-          Read More about SAM-IT
-        </a>
+      <div className="text-center mb-8">
+        <p className="mt-2 inline-block text-gray-900 font-bold border-orange-600 border py-2 px-6 rounded-md text-4lg">
+          Follow Us and Findout More!
+        </p>
       </div>
+      <div className="flex space-x-4 md:mt-0 m-auto">
+          <a href="https://facebook.com" aria-label="Facebook" target='blank' className="text-orange-900 hover:text-orange-600">
+          <FontAwesomeIcon icon={faFacebook} className='size-8' /> 
+          </a>
+          <a href="https://instagram.com" aria-label="Instagram" target='blank' className="text-orange-900 hover:text-orange-600">
+          <FontAwesomeIcon icon={faInstagram} className='size-8' />
+          </a>
+          <a href="https://" aria-label="Discord" target='blank' className="text-orange-900 hover:text-orange-600">
+          <FontAwesomeIcon icon={faDiscord} className='size-8' />
+          </a>
+          <a href="https://twitter.com/" aria-label="Twitter" target='blank' className="text-orange-900 hover:text-orange-600">
+            <FontAwesomeIcon icon={faXTwitter} className='size-8' /> 
+          </a>
+          <a href="https://github.com/" aria-label="GitHub" target='blank' className="text-orange-900 hover:text-orange-600">
+          <FontAwesomeIcon icon={faGithub} className='size-8' />
+          </a>
+          <a href="https://youtube.com/" aria-label="YouTube" target='blank' className="text-orange-900 hover:text-orange-600">
+          <FontAwesomeIcon icon={faYoutube}  className='size-8'/>  
+          </a>
+  
+        </div>
     </div>
   );
 };
