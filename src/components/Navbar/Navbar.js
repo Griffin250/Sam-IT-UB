@@ -107,12 +107,13 @@ const Navbar = () => {
               <input
                 type="search"
                 placeholder="Search here..."
-                className="w-full p-2 pl-4 pr-10 border border-gray-300 rounded-lg shadow-sm outline-none focus:ring-1 focus:ring-orange-400"
+                className="w-full p-2 pl-4 pr-10 text-gray-100 border bg-inherit rounded-lg shadow-sm outline-none focus:ring-orange-400"
               />
+              <button type="submit" className="border border-none absolute right-0 top-3">
               <FontAwesomeIcon
                 icon={faSearch}
-                className="absolute right-3 text-gray-700  text-xl cursor-pointer hover:text-orange-600"
-              />
+                className="absolute right-3 text-gray-300  text-xl cursor-pointer hover:text-orange-600"
+              /> </button>
             </label>
           </form>
         </div>
