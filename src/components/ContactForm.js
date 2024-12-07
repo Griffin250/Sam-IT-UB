@@ -28,7 +28,7 @@ const ContactForm = () => {
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
     settings: {
-      from_name: "GriffinTechs",
+      from_name: "Sam-IT UB",
       subject: "New Contact Message from your Website",
     },
     onSuccess: (msg) => {
