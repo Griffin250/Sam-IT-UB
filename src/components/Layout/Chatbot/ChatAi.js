@@ -23,7 +23,7 @@ const ChatAi = () => {
     } catch (error) {
       setMessages([
         ...newMessages,
-        { user: "bot", text: "You have asked alot of questions! I will not answer you anymore!. Claude Do you hear me?" },
+        { user: "bot", text: "You have asked alot of questions! I will not answer you anymore!." },
       ]);
     }
 
