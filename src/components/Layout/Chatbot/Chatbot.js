@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+import ChatAi from "./ChatAi";
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,17 +48,19 @@ const Chatbot = () => {
             {/* <p className='mt-4 overflow-y-auto p-4 rounded-t-3xl bg-gray-200'> Thank you for contacting GriffinTechs. 
               By continuing you agree to our privacy policy <a href='#privacy' className='text-blue-400'>https://newfold.com/privacy-center </a> </p>*/}
             {/* Chat messages would go here */}
+            <ChatAi/>
           </div>
 
+         
           <div className="relative flex items-center w-full">
-            {/* Input Field */}
+             {/* ...............Send Button 
             <form method="get" className="relative flex items-center w-full">
               <input
                 type="text"
                 placeholder="Type your message..."
                 className="flex-1 p-2 pr-14 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600"
               />
-              {/* Send Button */}
+             
               <button
                 className="absolute right-0 h-full px-4 text-orange-600 flex items-center justify-center"
                 type="submit"
@@ -68,7 +71,7 @@ const Chatbot = () => {
                   title="Ask AI"
                 />
               </button>
-            </form>
+            </form> ...................*/}
           </div>
           <p className="text-white">
             Your use of this Chatbot is governed by this{" "}
@@ -82,7 +85,7 @@ const Chatbot = () => {
 
       {/* Floating Chat Button */}
       {!isOpen && (
-        <button
+        <button 
           onClick={toggleChat}
           className="bg-orange-700 text-white p-4 rounded-full shadow-lg hover:bg-orange-600 focus:outline-none"
         >

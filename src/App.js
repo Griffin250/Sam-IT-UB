@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import ContactForm from "./components/ContactForm";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import LoginSignup from "./components/Auth/LoginSignup";
-import Chatbot from "../src/components/Layout/Chatbot";
+import Chatbot from "./components/Layout/Chatbot/Chatbot";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import BlogPosts from "./pages/BlogPost";
