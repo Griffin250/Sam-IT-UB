@@ -1,7 +1,6 @@
 import {
   faClose,
   faMinus,
-  faPaperPlane,
   faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
