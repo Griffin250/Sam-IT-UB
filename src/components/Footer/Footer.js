@@ -24,10 +24,8 @@ const scrollToTop = ()=>{
           <h5 className="text-lg font-semibold mb-4">Solutions</h5>
           <ul className="space-y-2">
             <li className="cursor-pointer opacity-75 hover:opacity-100  ">Marketing</li>
-            <li className="cursor-pointer opacity-75 hover:opacity-100  ">Analytics</li>
             <li className="cursor-pointer opacity-75 hover:opacity-100  ">Automation</li>
             <li className="cursor-pointer opacity-75 hover:opacity-100  ">Commerce</li>
-            <li className="cursor-pointer opacity-75 hover:opacity-100  ">Insights</li>
           </ul>
         </div>
         
@@ -35,7 +33,6 @@ const scrollToTop = ()=>{
         <div>
           <h5 className="text-lg font-semibold mb-4">Support</h5>
           <ul className="space-y-2">
-            <li className="cursor-pointer opacity-75 hover:opacity-100">Submit ticket</li>
             <li className="cursor-pointer opacity-75 hover:opacity-100">Documentation</li>
             <li className="cursor-pointer opacity-75 hover:opacity-100">Guides</li>
           </ul>
@@ -47,8 +44,7 @@ const scrollToTop = ()=>{
           <ul className="space-y-2">
             <li className="cursor-pointer opacity-75 hover:opacity-100">About</li>
             <NavLink to="/blogPost" onClick={scrollToTop} > <li className="cursor-pointer opacity-75 hover:opacity-100">Blog</li></NavLink>
-            <li className="cursor-pointer opacity-75 hover:opacity-100">Jobs</li>
-            <li className="cursor-pointer opacity-75 hover:opacity-100">Press</li>
+            <li className="cursor-pointer opacity-75 hover:opacity-100">Customer Reviews</li>
           </ul>
         </div>
         

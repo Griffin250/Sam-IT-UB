@@ -5,7 +5,8 @@ import {
   faBars,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
-import profileImage from "../../assets/Icons/Language_1.png";
+import language_1 from "../../assets/Icons/Language_1.png";
+import language_2 from "../../assets/Icons/Language_2.png";
 import website_logo from "../../assets/Website_logo.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -14,6 +15,15 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true); // Boolean to toggle navbar visibility
   const [lastScrollY, setLastScrollY] = useState(0); // Number to track last scroll position
+ 
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("English"); // Default language
+
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language); // Update the selected language
+    setIsDropdownOpen(false); // Close the dropdown
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,9 +73,9 @@ const Navbar = () => {
             />
           </NavLink>
           <FontAwesomeIcon
-                icon={faSearch}
-                className="absolute right-16 text-gray-200 h-5 cursor-pointer hover:text-orange-600 md:hidden"
-              />
+            icon={faSearch}
+            className="absolute right-16 text-gray-200 h-5 cursor-pointer hover:text-orange-600 md:hidden"
+          />
         </div>
 
         {/* Navigation Links - Hidden on small screens */}
@@ -86,12 +96,13 @@ const Navbar = () => {
 
             <NavLink to="/services" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Services 
+                Services
               </li>
             </NavLink>
             <NavLink to="/support" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Support {/*.....<FontAwesomeIcon icon={faChevronDown} />......*/}
+                Support{" "}
+                {/*.....<FontAwesomeIcon icon={faChevronDown} />......*/}
               </li>
             </NavLink>
 
@@ -109,11 +120,15 @@ const Navbar = () => {
                 placeholder="Search here..."
                 className="w-full p-2 pl-4 pr-10 text-gray-100 border bg-inherit rounded-lg shadow-sm outline-none focus:ring-orange-400"
               />
-              <button type="submit" className="border border-none absolute right-0 top-3">
-              <FontAwesomeIcon
-                icon={faSearch}
-                className="absolute right-3 text-gray-300  text-xl cursor-pointer hover:text-orange-600"
-              /> </button>
+              <button
+                type="submit"
+                className="border border-none absolute right-0 top-3"
+              >
+                <FontAwesomeIcon
+                  icon={faSearch}
+                  className="absolute right-3 text-gray-300  text-xl cursor-pointer hover:text-orange-600"
+                />{" "}
+              </button>
             </label>
           </form>
         </div>
@@ -126,19 +141,65 @@ const Navbar = () => {
               <span className="">Join Us</span>
             </button>
           </NavLink>
-          <img
-            src={profileImage} // Replace with actual profile image URL
-            alt="Profile"
-            className="w-8 h-8 rounded-full cursor-pointer hidden md:block"
-          />
 
+          <div className="relative languages">
+      {/* Trigger for Dropdown */}
+      <div
+        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+        className="flex items-center cursor-pointer p-2  rounded-md"
+      >
+        <img
+          src={selectedLanguage === "English" ? language_1 : language_2} // Display current language icon
+          alt="Selected Language"
+          className="w-6 h-6 rounded-full mr-2"
+        />
+        <p className="text-gray-100 font-bold">{selectedLanguage}</p>
+      </div>
+
+      {/* Dropdown Menu */}
+      {isDropdownOpen && (
+        <div className="absolute left-0 mt-2 bg-gray-900 text-white rounded-md shadow-lg w-full sm:w-40 z-10">
+          {selectedLanguage !== "English" && (
+            <button
+              className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
+              onClick={() => handleLanguageChange("English")}
+            >
+              <img
+                src={language_1} // English icon/image
+                alt="English"
+                className="w-5 h-5 rounded-full mr-2"
+              />
+              English
+            </button>
+          )}
+          {selectedLanguage !== "Norsk" && (
+            <button
+              className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
+              onClick={() => handleLanguageChange("Norsk")}
+            >
+              <img
+                src={language_2} // Norsk icon/image
+                alt="Norsk"
+                className="w-5 h-5 rounded-full mr-2"
+              />
+              Norsk
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+
+    
           {/* Hamburger Menu - Visible on small screens */}
           <div className="md:hidden">
             <button
               className="text-gray-400 hover:text-white focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              <FontAwesomeIcon icon={faBars} className="h-6 hover:text-orange-600" />
+              <FontAwesomeIcon
+                icon={faBars}
+                className="h-6 hover:text-orange-600"
+              />
             </button>
           </div>
         </div>
