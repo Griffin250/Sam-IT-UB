@@ -51,7 +51,9 @@ html, body{
   transform: translateX(8px);
   transition: 0.3s ease-in;
 }
-
+.chatbot-btn{
+  height: 41.8px;
+}
 
 
   /* Extra Small Devices (Phones) */

@@ -52,17 +52,23 @@ const ChatAi = () => {
           </div>
         ))}
       </div>
-      <div className="flex items-center">
-        <input
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Type a message..."
-          className="flex-1 border rounded-l-md p-2 focus:outline-none"
-        />
-        <button
-          onClick={sendMessage}
-          className="bg-orange-500 text-white px-4 py-2 rounded-r-md hover:bg-orange-600"
+      <form
+  onSubmit={(e) => {
+    e.preventDefault(); // Prevent default form submission
+    sendMessage(); // Trigger the sendMessage function
+  }} 
+>
+  <div className="flex items-center">
+    <input
+      type="text"
+      value={input}
+      onChange={(e) => setInput(e.target.value)}
+      placeholder="Type a message..."
+      className="flex-1 border rounded-l-md p-2 focus:outline-none"
+    />
+      <button
+           type="submit"
+          className="chatbot-btn bg-orange-500 text-white px-4 py-2 rounded-r-md hover:bg-orange-600"
         >
            <FontAwesomeIcon
                   icon={faPaperPlane}
@@ -70,7 +76,9 @@ const ChatAi = () => {
                   title="Ask AI"
                 />
         </button>
-      </div>
+  </div>
+</form>
+
     </div>
   );
 };

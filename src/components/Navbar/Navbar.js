@@ -149,7 +149,7 @@ const Navbar = () => {
         className="flex items-center cursor-pointer p-2  rounded-md"
       >
         <img
-          src={selectedLanguage === "English" ? language_1 : language_2} // Display current language icon
+          src={selectedLanguage === "English" ? language_1 : language_2} 
           alt="Selected Language"
           className="w-6 h-6 rounded-full mr-2"
         />
