@@ -43,8 +43,8 @@ const ChatAi = () => {
             <p
               className={`inline-block px-3 py-2 rounded-md ${
                 msg.user === "client"
-                  ? "bg-blue-200 text-gray-800"
-                  : "bg-gray-200 text-gray-800"
+                  ? "bg-blue-200 text-gray-800 text-left"
+                  : "bg-gray-200 text-gray-800 text-left"
               }`}
             >
               {msg.text}
@@ -64,15 +64,15 @@ const ChatAi = () => {
       value={input}
       onChange={(e) => setInput(e.target.value)}
       placeholder="Type a message..."
-      className="flex-1 border rounded-l-md p-2 focus:outline-none focus:border-1 focus:border-orange-600"
+      className="flex-1 border rounded-md p-2 focus:outline-none focus:border-2 focus:border-orange-500"
     />
       <button
            type="submit"
-          className="chatbot-btn bg-orange-500 text-white px-4 py-2 rounded-r-md hover:bg-orange-600"
+          className="chatbot-btn m-auto"
         >
            <FontAwesomeIcon
                   icon={faPaperPlane}
-                  className="h-4 w-4"
+                  className="h-6 w-6 text-orange-600 -ml-12 hover:text-orange-700 cursor-pointer"
                   title="Ask AI"
                 />
         </button>
