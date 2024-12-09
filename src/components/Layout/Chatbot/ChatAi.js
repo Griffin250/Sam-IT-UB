@@ -64,7 +64,7 @@ const ChatAi = () => {
       value={input}
       onChange={(e) => setInput(e.target.value)}
       placeholder="Type a message..."
-      className="flex-1 border rounded-l-md p-2 focus:outline-none"
+      className="flex-1 border rounded-l-md p-2 focus:outline-none focus:border-1 focus:border-orange-600"
     />
       <button
            type="submit"
