@@ -50,7 +50,7 @@ const Services = () => {
     
 
       <div className="max-w-4xl mx-auto">
-
+      <div className="border-t border-gray-500 w-4/6 mb-2 m-auto"></div>
         {/* Heading */}
         <h2 className="text-5xl font-bold text-gray-700 mb-4 text-center">
           {t("servicesHeading")}
