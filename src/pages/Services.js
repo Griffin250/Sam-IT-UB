@@ -8,7 +8,7 @@ const Services = () => {
 
 
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-12 px-6 md:px-16 lg:px-24 mt-12">
+    <div className="bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-12 px-6 md:px-16 lg:px-24 mt-2">
 
     <section className="min-h-screen flex items-center justify-center py-12">
       <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center">
