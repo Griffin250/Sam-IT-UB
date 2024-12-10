@@ -1,4 +1,5 @@
 import React from "react";
+import './components/Layout/Languages/i18n'
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
@@ -12,7 +13,6 @@ import BlogPosts from "./pages/BlogPost";
 import Services from "./pages/Services";
 import Product from "./pages/Product";
 import Support from "./pages/Support";
-import './components/Layout/Languages/i18n'
 import 'primereact/resources/themes/saga-blue/theme.css'; 
 import 'primereact/resources/primereact.min.css';         
 import 'primeicons/primeicons.css';                     

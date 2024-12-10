@@ -1,11 +1,11 @@
 import React from "react";
 import CEO from "../assets/otherImages/Tech.png";
-import Team from "../assets/Team/Liam_Emma.png"
+import Team from "../assets/Team/Liam_Emma.png";
 import Developers from "../assets/otherImages/Isiah_Emma.png";
 import Technician from "../assets/otherImages/Technician.png";
 import { NavLink } from "react-router-dom";
 
-import ProfileCard from '../pages/ProfileCard'
+import ProfileCard from "../pages/ProfileCard";
 const AboutUs = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -17,22 +17,24 @@ const AboutUs = () => {
     <div className="bg-gray-50 mt-5">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-300 via-gray-100 text-gray-800 py-20 px-4">
-        <h1 className="text-4xl md:text-5xl text-center font-bold mb-4">About Sam-IT UB</h1>
+        <h1 className="text-4xl md:text-5xl text-center font-bold mb-4">
+          About Sam-IT UB
+        </h1>
         <p className="text-lg md:text-xl max-w-5xl mx-auto">
-        SAM-IT is a student-driven company offering IT user support and
+          SAM-IT is a student-driven company offering IT user support and
           development services for both individuals and businesses. We provide
           efficient, reliable solutions for your digital needs, whether it’s
           technical support or web development.
-         
-        </p><br/><br/>
+        </p>
+        <br />
+        <br />
         <p className="text-lg md:text-xl max-w-5xl mx-auto">
-        
-          At SAM-IT, we combine innovative thinking with hands-on expertise
-          to provide high-quality IT services. Our team of dedicated students
-          focuses on scalability, security, and seamless solutions, ensuring
-          your business operates smoothly in today’s tech-driven world. From
-          tailored web applications to personalized support, we’re here to
-          enhance your digital experience and help you succeed.
+          We combine innovative thinking with hands-on expertise to provide
+          high-quality IT services. Our team of dedicated students focuses on
+          scalability, security, and seamless solutions, ensuring your business
+          operates smoothly in today’s tech-driven world. From tailored web
+          applications to personalized support, we’re here to enhance your
+          digital experience and help you succeed.
         </p>
       </section>
 
@@ -59,13 +61,17 @@ const AboutUs = () => {
               Our Vision
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              To be the trusted partner for businesses around the world,
-              offering cutting-edge IT solutions and consultancy that drive
-              innovation and success.
+              To be the trusted partner for businesses around Agder, offering
+              cutting-edge IT solutions and consultancy that drive innovation
+              and success.
             </p>
           </div>
           <div>
-            <img src={Technician} alt="Vision" className="rounded-lg shadow-lg" />
+            <img
+              src={Technician}
+              alt="Vision"
+              className="rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
@@ -122,8 +128,6 @@ const AboutUs = () => {
       </section>
 
       {/* Team Section */}
-      
-
       <ProfileCard />
 
       {/* Call to Action */}
@@ -135,8 +139,7 @@ const AboutUs = () => {
         </p>
 
         <NavLink to={"/ContactForm"} onClick={scrollToTop}>
-          <button
-            className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-800">
+          <button className="px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-800">
             Contact Us
           </button>
         </NavLink>

@@ -19,7 +19,7 @@ const WhoAreWe = () => {
         </p>
         <br/>
         <p className="mt-4 text-lg text-gray-600 max-w-5xl m-auto">
-          At SAM-IT UB, we combine innovative thinking with hands-on expertise
+          We combine innovative thinking with hands-on expertise
           to provide high-quality IT services. Our team of dedicated students
           focuses on scalability, security, and seamless solutions, ensuring
           your business operates smoothly in today’s tech-driven world. From

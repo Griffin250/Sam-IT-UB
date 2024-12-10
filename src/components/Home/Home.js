@@ -9,15 +9,15 @@ import ContactForm from "../ContactForm";
 
 const links = [
   { name: "Open roles", href: "#" },
-  { name: "Internship program", href: "#" },
+  { name: "Projects", href: "#" },
   { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" },
+  { name: "Meet our leadership", href: "/aboutUs" },
 ];
 const stats = [
   { name: "Offices ", value: "1" },
-  { name: "Full-time colleagues", value: "4" },
+  { name: "Dedicated colleagues", value: "4" },
   { name: "Hours per week", value: "25+" },
-  { name: "Paid time off", value: "100+" },
+  { name: "Client Satisfaction", value: "100%" },
 ];
 
 export default function Example() {
@@ -60,16 +60,14 @@ export default function Example() {
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center align-middle justify-center">
-          <div className="mx-auto max-w-4xl lg:mx-0">
-            <h3 className="text-5xl font-semibold  text-white sm:text-8xl text-center m-auto">
-              Partner with Sam-IT
-            </h3>
-            <p className="mt-8 text-pretty text-lg font-medium justify-center flex text-gray-300 sm:text-xl/8">
-              We believe in building lasting partnerships with our clients.{" "}
-              <br />
-              Our team is dedicated to providing personalized solutions that
-              meet your -
-              <br /> unique business needs, delivering exceptional service and
+          <div className="m-auto max-w-4xl">
+            <h2 className="text-2xl font-semibold  text-white sm:text-6xl text-center m-auto">
+              Empowering Your Digital Journey
+            </h2>
+            <p className="mt-8 text-pretty text-2xl font-medium justify-center flex text-gray-300 sm:text-xl/8">
+              We believe in building lasting partnerships with our clients. Our
+              team is dedicated to providing personalized solutions that meet
+              your - unique business needs, delivering exceptional service and
               support every step of the way.
             </p>
           </div>
@@ -98,13 +96,9 @@ export default function Example() {
       <div className="bg-gradient-to-bl from-blue-200 via-gray-200 to-blue-100 py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-5xl font-bold mb-2 text-gray-800">
+          <h2 className="text-3xl md:text-5xl sm:text-4xl font-bold mb-2 text-gray-800">
             Lets bring your Dreams to Life
           </h2>
-          {/* Subtitle */}
-          <p className="text-gray-600 text-lg mb-8">
-            Everything you need to deploy your app
-          </p>
           {/* Description */}
           <p className="text-gray-600 max-w-3xl mx-auto mb-12">
             We provide everything you need to develop, deploy, and maintain your
@@ -183,7 +177,7 @@ export default function Example() {
           </span>
         </div>
 
-        <div className="text-900 font-bold text-3xl sm:text-4xl md:text-5xl mb-3">
+        <div className="text-900 font-bold text-2xl sm:text-4xl md:text-5xl mb-3">
           Join Our Discord Support Community
         </div>
 
@@ -193,11 +187,14 @@ export default function Example() {
           in driving your digital success!
         </div>
 
-        <a href="https://discord.gg/sBrzuMpt" className="" target="blank"> <Button
-          label="Join Now"
-          icon="pi pi-discord"
-          className="font-bold px-4 sm:px-5 py-3 p-button-raised p-button-rounded white-space-nowrap bg-gradient-to-r from-orange-600 via-purple-700 to-orange-500 hover:bg-gradient-to-r hover:from-purple-600 hover:via-orange-700 hover:to-purple-500 transition duration-75"
-        /></a>
+        <a href="https://discord.gg/sBrzuMpt" className="" target="blank">
+          {" "}
+          <Button
+            label="Join Now"
+            icon="pi pi-discord"
+            className="font-bold px-4 sm:px-5 py-3 p-button-raised p-button-rounded white-space-nowrap bg-gradient-to-r from-orange-600 via-purple-700 to-orange-500 hover:bg-gradient-to-r hover:from-purple-600 hover:via-orange-700 hover:to-purple-500 transition duration-75"
+          />
+        </a>
       </div>
 
       <ContactForm />

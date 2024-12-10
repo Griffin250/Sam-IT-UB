@@ -9,8 +9,16 @@
 
 html, body{
     overscroll-behavior: none;
+ 
 }
-
+h1, h2{
+  font-family:sans, serif;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .blog-section{
   width: 92%;
 }

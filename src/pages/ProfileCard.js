@@ -9,11 +9,14 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 const ProfileCard = ({ name, title, description, email, phone, image }) => {
   return (
     <div className="bg-inherit h-3/4 rounded-lg shadow-lg overflow-hidden border border-gray-300">
+      
       {/* Image Section */}
       <img src={image} alt={name} className="w-full h-2/4 object-cover" />
 
       {/* Content Section */}
+      
       <div className="p-6 bg-gradient-to-b from-gray-200 to-blue-200">
+       
         <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
         <p className="text-sm text-gray-500 mt-1">{title}</p>
         <p className="text-gray-600 mt-4">{description}</p>
