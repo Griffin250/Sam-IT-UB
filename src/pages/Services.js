@@ -26,7 +26,7 @@ const Services = () => {
             tempor incididunt ut labore et dolore magna aliqua.
           </p>
           <div className="flex justify-center md:justify-start gap-4">
-            <button className="px-6 py-3 bg-blue-500 rounded-lg text-white text-lg font-medium hover:bg-blue-700 transition-colors">
+            <button className="px-6 py-3 bg-orange-600 rounded-lg text-white text-lg font-medium hover:bg-orange-700 transition-colors">
               Find Out
             </button>
             <button className="px-6 py-3 bg-transparent border-2 border-orange-600 rounded-lg text-blue-700 text-lg font-medium hover:bg-orange-600 hover:text-white transition-all">
