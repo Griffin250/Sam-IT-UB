@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Technician from "../assets/otherImages/BlogImages/Technician.png";
 import Students from "../assets/otherImages/BlogImages/Isiah_Emma.png";
 import UpcomingEvent from "../assets/otherImages/BlogImages/UpcomingEvent.png";
-import Sam_IT_Poster from "../assets/otherImages/BlogImages/Sam_IT_Poster.png";
+import Sam_IT_Poster from "../assets/otherImages/BlogImages/Chrismas_eve.png";
 import AI_Robot from "../assets/otherImages/BlogImages/AI_Robot.png";
 import Cyber from "../assets/otherImages/BlogImages/Cyber_Security.png";
 import Support from "../assets/otherImages/BlogImages/Support.png";
@@ -68,10 +68,15 @@ const BlogPosts = () => {
             </h3>
             <p className="text-gray-600 text-sm">
               At Sam-IT UB, we're excited to announce our expanded presence in
-              Arendal, where we continue to offer IT support and solutions to everyone. <br/>
-              Our new office in Arendal serves as a hub for innovation and collaboration, where...
+              Arendal, where we continue to offer IT support and solutions to
+              everyone. <br />
+              Our new office in Arendal serves as a hub for innovation and
+              collaboration, where...
             </p>
-            <a href="NoLink" className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600 ">
+            <a
+              href="NoLink"
+              className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600 "
+            >
               Learn More &rarr;
             </a>
           </div>
@@ -95,7 +100,10 @@ const BlogPosts = () => {
               troubleshooting, software installation, and cybersecurity. Our
               team ensures smooth and secure operations...
             </p>
-            <a href="NoLink" className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600">
+            <a
+              href="NoLink"
+              className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
+            >
               Learn More &rarr;
             </a>
           </div>
@@ -143,7 +151,10 @@ const BlogPosts = () => {
               2024 and beyond is crucial for businesses and individuals to
               maintain a competitive edge and therefore, Sam-IT is...
             </p>
-            <a href="NoLink" className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600">
+            <a
+              href="NoLink"
+              className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
+            >
               Learn More &rarr;
             </a>
           </div>
@@ -166,11 +177,39 @@ const BlogPosts = () => {
               It is important to find an employer that aligns with your values
               and work style. If you value work-life balance, you should...
             </p>
-            <a href="NoLink" className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600k">
+            <a
+              href="NoLink"
+              className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600k"
+            >
               Learn More &rarr;
             </a>
           </div>
+          <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
+            <img
+              src={UpcomingEvent_2}
+              alt="New offices in Arendal"
+              className="w-full h-40 object-cover rounded-xl mb-4"
+            />
+            <h2 className="text-lg font-bold text-gray-900 bg-gradient-to-r from-orange-700 via-orange-200 to-orange-500 rounded-md py-2 px-3 mb-4 text-center shadow-md">
+              Upcoming Event!
+            </h2>
+            <h3 className="font-bold text-gray-600 mb-2">
+              Slush'D Energy 2025-Are Your Coming?
+            </h3>
+            <p className="text-gray-600 text-sm">
+              Digin is co-hosting Slush'D Energy on March 12, 2025, in Mandal,
+              bringing together startups, investors, and industry leaders to
+              focus on sustainability, clean-tech, energy, AI...
+            </p>
 
+            <a
+              href="https://digin.no/events/slushd-energy/"
+              target="blank"
+              className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
+            >
+              Learn More &rarr;
+            </a>
+          </div>
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
               src={Sam_IT_Poster}
@@ -185,11 +224,14 @@ const BlogPosts = () => {
               Launching Our Project Posters to the Public
             </h3>
             <p className="text-gray-600 text-sm">
-            Sam-IT UB are thrilled to announce that we will soon begin
+              Sam-IT UB are thrilled to announce that we will soon begin
               distributing our project posters as part of our advertising
               campaign....
             </p>
-            <a href="NoLink" className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600">
+            <a
+              href="NoLink"
+              className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
+            >
               Learn More &rarr;
             </a>
           </div>
@@ -244,32 +286,8 @@ const BlogPosts = () => {
               workshops, and tech events, helping businesses and individuals
               thrive in the digital age...
             </p>
-            <a href="NoLink" className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600">
-              Learn More &rarr;
-            </a>
-          </div>
-
-          <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
-            <img
-              src={UpcomingEvent_2}
-              alt="New offices in Arendal"
-              className="w-full h-40 object-cover rounded-xl mb-4"
-            />
-            <h2 className="text-lg font-bold text-gray-900 bg-gradient-to-r from-orange-700 via-orange-200 to-orange-500 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              Upcoming Event!
-            </h2>
-            <h3 className="font-bold text-gray-600 mb-2">
-              Slush'D Energy 2025-Are Your Coming?
-            </h3>
-            <p className="text-gray-600 text-sm">
-              Digin is co-hosting Slush'D Energy on March 12, 2025, in Mandal,
-              bringing together startups, investors, and industry leaders to
-              focus on sustainability, clean-tech, energy, AI...
-            </p>
-
             <a
-              href="https://digin.no/events/slushd-energy/"
-              target="blank"
+              href="NoLink"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
               Learn More &rarr;

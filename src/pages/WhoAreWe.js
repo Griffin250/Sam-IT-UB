@@ -43,7 +43,7 @@ const WhoAreWe = () => {
           <a href="https://instagram.com" aria-label="Instagram" target='blank' className="text-orange-900 hover:text-orange-600">
           <FontAwesomeIcon icon={faInstagram} className='size-8' />
           </a>
-          <a href="https://" aria-label="Discord" target='blank' className="text-orange-900 hover:text-orange-600">
+          <a href="https://discord.gg/sBrzuMpt" aria-label="Discord" target='blank' className="text-orange-900 hover:text-orange-600">
           <FontAwesomeIcon icon={faDiscord} className='size-8' />
           </a>
           <a href="https://twitter.com/" aria-label="Twitter" target='blank' className="text-orange-900 hover:text-orange-600">

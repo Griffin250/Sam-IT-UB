@@ -10,15 +10,15 @@ import language_2 from "../../assets/Icons/Language_2.png";
 import website_logo from "../../assets/Website_logo.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true); // Boolean to toggle navbar visibility
   const [lastScrollY, setLastScrollY] = useState(0); // Number to track last scroll position
- 
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("English"); // Default language
+  const [selectedLanguage, setSelectedLanguage] = useState("En"); // Default language
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language); // Update the selected language
@@ -54,6 +54,14 @@ const Navbar = () => {
       behaviour: "smooth",
     });
   };
+
+  const { i18n } = useTranslation();
+
+  // Function to change language
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div
       className={`bg-gray-900 fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
@@ -131,6 +139,22 @@ const Navbar = () => {
               </button>
             </label>
           </form>
+
+          {/* Language Switcher */}
+          <div className="flex justify-end mb-2">
+            <button
+              className="px-4 py-2 text-gray-800 bg-gray-200 rounded-l-md hover:bg-gray-400"
+              onClick={() => changeLanguage("en")}
+            >
+              English
+            </button>
+            <button
+              className="px-4 py-2 text-gray-800 bg-gray-200 rounded-r-md hover:bg-gray-400"
+              onClick={() => changeLanguage("no")}
+            >
+              Norsk
+            </button>
+          </div>
         </div>
 
         {/* Right side - New Job Button, Notification Icon, Profile */}
@@ -143,53 +167,52 @@ const Navbar = () => {
           </NavLink>
 
           <div className="relative languages">
-      {/* Trigger for Dropdown */}
-      <div
-        onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-        className="flex items-center cursor-pointer p-2  rounded-md"
-      >
-        <img
-          src={selectedLanguage === "English" ? language_1 : language_2} 
-          alt="Selected Language"
-          className="w-6 h-6 rounded-full mr-2"
-        />
-        <p className="text-gray-100 font-bold">{selectedLanguage}</p>
-      </div>
-
-      {/* Dropdown Menu */}
-      {isDropdownOpen && (
-        <div className="absolute left-0 mt-2 bg-gray-900  text-white rounded-md shadow-lg w-80 sm:w-40 z-10">
-          {selectedLanguage !== "English" && (
-            <button
-              className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
-              onClick={() => handleLanguageChange("English")}
+            {/* Trigger for Dropdown */}
+            <div
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              className="flex items-center cursor-pointer p-2  rounded-md"
             >
               <img
-                src={language_1} // English icon/image
-                alt="English"
-                className="w-5 h-5 rounded-full mr-2"
+                src={selectedLanguage === "En" ? language_1 : language_2}
+                alt="Selected Language"
+                className="w-6 h-6 rounded-full mr-2"
               />
-              English
-            </button>
-          )}
-          {selectedLanguage !== "Norsk" && (
-            <button
-              className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
-              onClick={() => handleLanguageChange("Norsk")}
-            >
-              <img
-                src={language_2} // Norsk icon/image
-                alt="Norsk"
-                className="w-5 h-5 rounded-full mr-2"
-              />
-              Norsk
-            </button>
-          )}
-        </div>
-      )}
-    </div>
+              <p className="text-gray-100 font-bold">{selectedLanguage}</p>
+            </div>
 
-    
+            {/* Dropdown Menu */}
+            {isDropdownOpen && (
+              <div className="absolute -left-8 mt-2 bg-gray-900  text-white rounded-md shadow-lg w-80 sm:w-40 z-10">
+                {selectedLanguage !== "En" && (
+                  <button
+                    className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
+                    onClick={() => handleLanguageChange("En")}
+                  >
+                    <img
+                      src={language_1} // English icon/image
+                      alt="English"
+                      className="w-4 h-4 rounded-full mr-2"
+                    />
+                    English
+                  </button>
+                )}
+                {selectedLanguage !== "No" && (
+                  <button
+                    className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
+                    onClick={() => handleLanguageChange("No")}
+                  >
+                    <img
+                      src={language_2} // Norsk icon/image
+                      alt="Norsk"
+                      className="w-4 h-4 rounded-full mr-2"
+                    />
+                    Norsk
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
+
           {/* Hamburger Menu - Visible on small screens */}
           <div className="md:hidden">
             <button
@@ -282,6 +305,22 @@ const Navbar = () => {
               <span>Join Us</span>
             </button>
           </NavLink>
+
+          {/* Language Switcher */}
+          <div className="flex justify-end mb-4">
+            <button
+              className="px-4 py-2 bg-gray-200 rounded-l-md hover:bg-gray-300"
+              onClick={() => changeLanguage("en")}
+            >
+              Eng
+            </button>
+            <button
+              className="px-4 py-2 bg-gray-200 rounded-r-md hover:bg-gray-300"
+              onClick={() => changeLanguage("no")}
+            >
+              Nor
+            </button>
+          </div>
         </div>
       )}
     </div>

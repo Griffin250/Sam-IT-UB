@@ -3,7 +3,7 @@ import BlogPosts from "../../pages/BlogPost";
 import Product from "../../pages/Product";
 import ShowCase from "../../pages/ShowCase";
 import WhoAreWe from "../../pages/WhoAreWe";
-
+import { Button } from "primereact/button";
 import ConsultationBanner from "../ConsultationBanner";
 import ContactForm from "../ContactForm";
 
@@ -14,16 +14,16 @@ const links = [
   { name: "Meet our leadership", href: "#" },
 ];
 const stats = [
-  { name: "Offices worldwide", value: "4" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "36" },
-  { name: "Paid time off", value: "Unlimited" },
+  { name: "Offices ", value: "1" },
+  { name: "Full-time colleagues", value: "4" },
+  { name: "Hours per week", value: "25+" },
+  { name: "Paid time off", value: "100+" },
 ];
 
 export default function Example() {
   return (
     <>
-    <WhoAreWe/>
+      <WhoAreWe />
       <ShowCase />
       <ConsultationBanner />
       <Product />
@@ -117,7 +117,9 @@ export default function Example() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 max-w-6xl mx-auto">
           {/* Push to Deploy */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card dream_card">
-            <h3 className="text-xl font-bold mb-2 text-gray-700">Push to deploy</h3>
+            <h3 className="text-xl font-bold mb-2 text-gray-700">
+              Push to deploy
+            </h3>
             <p className=" ">
               Easily bring your applications to life with our streamlined
               deployment services. With just a few steps, your app can be live
@@ -129,7 +131,9 @@ export default function Example() {
 
           {/* SSL Certificates */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card">
-            <h3 className="text-xl font-bold mb-2 text-gray-700">SSL certificates</h3>
+            <h3 className="text-xl font-bold mb-2 text-gray-700">
+              SSL certificates
+            </h3>
             <p className="">
               We take security seriously. All our services come with SSL
               certificates to protect your app and user data, ensuring a secure
@@ -139,9 +143,11 @@ export default function Example() {
               security standards.
             </p>
           </div>
-          {/* Simple Queues */} 
+          {/* Simple Queues */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card">
-            <h3 className="text-xl font-bold mb-2 text-gray-700">Reliable Support</h3>
+            <h3 className="text-xl font-bold mb-2 text-gray-700">
+              Reliable Support
+            </h3>
             <p className="">
               Our team is dedicated to providing you with responsive,
               knowledgeable support.
@@ -152,10 +158,10 @@ export default function Example() {
             </p>
           </div>
           {/* Advanced Security */}
-          <div
-            className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer hover:ease-in-out dream_card"
-          >
-            <h3 className="text-xl font-bold mb-2 text-gray-700">Advanced security</h3>
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer hover:ease-in-out dream_card">
+            <h3 className="text-xl font-bold mb-2 text-gray-700">
+              Advanced security
+            </h3>
             <p className="">
               Safeguard your application with advanced security measures
               tailored to your needs. <br />
@@ -167,6 +173,33 @@ export default function Example() {
         </div>
       </div>
       <BlogPosts />
+
+      <div className="surface-0 text-700 text-center p-4 sm:p-8 md:p-12 lg:p-20 bg-gradient-to-br from-blue-100 via-blue-200 to-gray-100">
+        <div className="bg-gradient-to-r from-blue-600 via-purple-700 80% to-blue-500 bg-clip-text text-transparent font-bold mt-4 mb-8">
+          <i className="pi pi-discord text-2xl sm:text-3xl"></i>&nbsp;
+          <span className="text-lg sm:text-2xl md:text-3xl bg-gradient-to-r from-orange-600 via-blue-400 to-orange-500 bg-clip-text text-transparent">
+            {" "}
+            POWERED BY INNOVATION
+          </span>
+        </div>
+
+        <div className="text-900 font-bold text-3xl sm:text-4xl md:text-5xl mb-3">
+          Join Our Discord Support Community
+        </div>
+
+        <div className="text-700 text-xl sm:text-2xl mb-4 sm:mb-8 mt-4 sm:mt-5 w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 m-auto">
+          Join our community on Discord for seamless tech support and
+          personalized assistance, and experience the difference SAM-IT can make
+          in driving your digital success!
+        </div>
+
+        <a href="https://discord.gg/sBrzuMpt" className="" target="blank"> <Button
+          label="Join Now"
+          icon="pi pi-discord"
+          className="font-bold px-4 sm:px-5 py-3 p-button-raised p-button-rounded white-space-nowrap bg-gradient-to-r from-orange-600 via-purple-700 to-orange-500 hover:bg-gradient-to-r hover:from-purple-600 hover:via-orange-700 hover:to-purple-500 transition duration-75"
+        /></a>
+      </div>
+
       <ContactForm />
     </>
   );
