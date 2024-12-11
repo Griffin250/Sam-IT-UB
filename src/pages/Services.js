@@ -1,15 +1,13 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 import ServiceImage from "../../src/assets/otherImages/SupportCommunity.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Services = () => {
-  const { t } = useTranslation();
 
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-12 px-6 md:px-16 lg:px-24 mt-2">
+    <div className="bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-5 px-6 md:px-16 lg:px-24 mt-2">
       <section className="min-h-screen flex items-center justify-center py-12">
         <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center">
           {/* Left Column (Text) */}
@@ -64,55 +62,64 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="border-t border-gray-500 w-4/6 mb-2 m-auto"></div>
+     
+      <div className="max-w-4xl mx-auto text-center">
         {/* Heading */}
-        <h2 className="text-5xl font-bold text-gray-700 mb-4 text-center">
-          {t("servicesHeading")}
-        </h2>
+        
+        <h2 className="text-4xl md:text-6xl sm:text-6xl font-bold text-gray-800 mb-4">Our Services</h2>
         {/* Subtitle */}
-        <h3 className="text-gray-600 text-2xl mb-8 text-center">
-          {t("servicesSubtitle")}
-        </h3>
+        <h2 className="text-gray-700 text-2xl mb-8 sm:text-3xl md:text-3xl">
+        The Best Defense is a Good Offense.
+        </h2>
         {/* Description */}
         <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-          {t("servicesDescription")}
+        As a leading Managed Service Provider in Agder, Sam-IT Technology Solutions partners with clients to take a proactive role in your IT.<b/>
+         We mitigate problems before they happen.
+         When issues do arise, your team will have 24/7/365 access to IT support and a live Help Desk.
         </p>
       </div>
       {/* Feature Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
         {/* Push to Deploy */}
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            {t("features.itSupport")}
-          </h3>
-          <p className="text-gray-600">{t("features.itSupportDescription")}</p>
+        <div className="bg-gray-100 p-6 rounded-lg shadow-md shadow-gray-400 hover:shadow-lg transition-shadow cursor-pointer hover:bg-orange-600">
+          <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">IT Support</h3>
+          <p className="text-gray-600">
+          Computer & Network Setup, Management and Support<br />
+            Vendor Coordination
+          </p>
         </div>
         {/* SSL Certificates */}
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            {t("features.managedServices")}
-          </h3>
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md shadow-gray-400 hover:shadow-lg transition-shadow cursor-pointer hover:bg-orange-600">
+          <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">Managed Services</h3>
           <p className="text-gray-600">
-            {t("features.managedServicesDescription")}
+          IT System Planning and Maintenance<br /> 
+        Proactive Monitoring <br /> 
+        On-Demand Support
           </p>
         </div>
         {/* Simple Queues */}
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            {t("features.security")}
-          </h3>
-          <p className="text-gray-600">{t("features.securityDescription")}</p>
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md shadow-gray-400 hover:shadow-lg transition-shadow cursor-pointer hover:bg-orange-600">
+          <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">Security</h3>
+          <p className="text-gray-600">
+          Malware Protection <br/>
+          Monitoring<br/>
+         Vulnerability Analysis<br/>
+         Data Recovery Planning
+          </p>
         </div>
         {/* Advanced Security */}
-        <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
-            {t("features.helpDesk")}
-          </h3>
-          <p className="text-gray-600">{t("features.helpDeskDescription")}</p>
+        <div className="bg-gray-50 p-6 rounded-lg shadow-md shadow-gray-400 hover:shadow-lg transition-shadow cursor-pointer hover:bg-orange-600 hover:text-white">
+          <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">Help Deask</h3>
+          <p className="text-gray-600">
+          Direct Support to End Users
+          </p>
         </div>
       </div>
     </div>
+
+      </div>
   );
 };
 
