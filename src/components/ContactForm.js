@@ -205,7 +205,9 @@ const ContactForm = () => {
         border-gray-300 focus:border-blue-400 ring-gray-100 cursor-pointer"
         >
           <select
-            className={"bg-inherit text-gray-800 border-none outline-none w-full cursor-pointer"}
+            className={
+              "bg-inherit text-gray-800 border-none outline-none w-full cursor-pointer"
+            }
             required
             defaultValue=""
             {...register("genre", {
@@ -215,46 +217,78 @@ const ContactForm = () => {
             <option value="" disabled>
               Select the type of support you need
             </option>
-            <option value="PC Troubleshooting and Repair" className="cursor-pointer">
-  PC Troubleshooting and Repair
-</option>
-<option value="Network Setup and Support" className="cursor-pointer">
-  Network Setup and Support
-</option>
-<option value="Software Installation and Updates" className="cursor-pointer">
-  Software Installation and Updates
-</option>
-<option value="Buy a PC or Hardware Recommendation" className="cursor-pointer">
-  Buy a PC or Hardware Recommendation
-</option>
-<option value="Data Backup and Recovery Assistance" className="cursor-pointer">
-  Data Backup and Recovery Assistance
-</option>
-<option value="Email Setup and Support" className="cursor-pointer">
-  Email Setup and Support
-</option>
-<option value="Web Hosting Support" className="cursor-pointer">
-  Web Hosting Support
-</option>
-<option value="Domain Purchase Assistance" className="cursor-pointer">
-  Domain Purchase Assistance
-</option>
-<option value="Web Development Assistance" className="cursor-pointer">
-  Web Development Assistance
-</option>
-<option value="Website Maintenance and Updates" className="cursor-pointer">
-  Website Maintenance and Updates
-</option>
-<option value="UX/UI Consultation for Websites" className="cursor-pointer">
-  UX/UI Consultation for Websites
-</option>
-<option value="IT Consultation and Training" className="cursor-pointer">
-  IT Consultation and Training
-</option>
-<option value="Technical Support for Small Businesses" className="cursor-pointer">
-  Technical Support for Small Businesses
-</option>
-
+            <option
+              value="PC Troubleshooting and Repair"
+              className="cursor-pointer"
+            >
+              PC Troubleshooting and Repair
+            </option>
+            <option
+              value="Network Setup and Support"
+              className="cursor-pointer"
+            >
+              Network Setup and Support
+            </option>
+            <option
+              value="Software Installation and Updates"
+              className="cursor-pointer"
+            >
+              Software Installation and Updates
+            </option>
+            <option
+              value="Buy a PC or Hardware Recommendation"
+              className="cursor-pointer"
+            >
+              Buy a PC or Hardware Recommendation
+            </option>
+            <option
+              value="Data Backup and Recovery Assistance"
+              className="cursor-pointer"
+            >
+              Data Backup and Recovery Assistance
+            </option>
+            <option value="Email Setup and Support" className="cursor-pointer">
+              Email Setup and Support
+            </option>
+            <option value="Web Hosting Support" className="cursor-pointer">
+              Web Hosting Support
+            </option>
+            <option
+              value="Domain Purchase Assistance"
+              className="cursor-pointer"
+            >
+              Domain Purchase Assistance
+            </option>
+            <option
+              value="Web Development Assistance"
+              className="cursor-pointer"
+            >
+              Web Development Assistance
+            </option>
+            <option
+              value="Website Maintenance and Updates"
+              className="cursor-pointer"
+            >
+              Website Maintenance and Updates
+            </option>
+            <option
+              value="UX/UI Consultation for Websites"
+              className="cursor-pointer"
+            >
+              UX/UI Consultation for Websites
+            </option>
+            <option
+              value="IT Consultation and Training"
+              className="cursor-pointer"
+            >
+              IT Consultation and Training
+            </option>
+            <option
+              value="Technical Support for Small Businesses"
+              className="cursor-pointer"
+            >
+              Technical Support for Small Businesses
+            </option>
           </select>
           {errors.genre && (
             <div className="mt-1 text-red-600">
