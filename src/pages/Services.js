@@ -14,9 +14,9 @@ const Services = () => {
         <div className="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center">
           {/* Left Column (Text) */}
           <div className="md:w-3/4 text-center md:text-left mb-8 md:mb-0">
-            <h2 className="text-2xl sm:text-4xl md:text-4xl font-extrabold leading-tight mb-4 text-gray-600 font-serif">
+            <h2 className="text-2xl sm:text-4xl md:text-4xl font-extrabold leading-tight mb-4 text-gray-600 font-serif bg-gradient-to-r from-blue-600 via-orange-700 80% to-blue-500 bg-clip-text text-transparent">
               The Service You Deserve,
-              <span className="block text-2xl sm:text-3xl md:text-3xl mt-4 font-bold text-gray-800 text-center">
+              <span className="block text-2xl sm:text-3xl md:text-3xl mt-4 font-bold text-orange-600 text-center">
                 The Service We Give!
               </span>
             </h2>
@@ -43,7 +43,7 @@ const Services = () => {
               <p className="text-sm mr-2  font-serif md:text-xl">
                 Explore our work in action and see why businesses and
                 individuals trust us to drive their success!{" "}
-                <button className="px-2 py-2 sm:px-3 sm:py-2 border-2 md:w-40 w-32 ml-4 sm:ml-8 font-bold border-orange-600 rounded-lg text-gray-800 text-sm sm:text-lg hover:bg-orange-600 transition-all">
+                <button className="px-2 py-2 sm:px-3 sm:py-2 border-2 md:w-40 w-32 ml-4 sm:ml-8 font-bold border-orange-600 rounded-lg text-gray-800 text-sm sm:text-lg hover:border-orange-700 bg-transparent transition-all">
                   Live Demo{" "}
                   <FontAwesomeIcon
                     icon={faArrowRight}
