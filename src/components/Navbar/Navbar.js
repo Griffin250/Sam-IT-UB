@@ -140,8 +140,21 @@ const Navbar = () => {
             </label>
           </form>
 
-          {/* Language Switcher */}
-          <div className="flex justify-end mb-2">
+       
+
+        </div>
+
+        {/* Right side - New Job Button, Notification Icon, Profile */}
+        <div className="flex items-center space-x-6">
+          <NavLink to={"/loginSignup"} onClick={scrollToTop}>
+            {" "}
+            <button className="hidden md:flex items-center space-x-1  bg-orange-600 hover:bg-orange-700 text-white py-1 px-3 rounded-lg font-bold text-xl">
+              <span className="">Join Us</span>
+            </button>
+          </NavLink>
+
+             {/*...... Language Switcher 
+             <div className="flex justify-end mb-2">
             <button
               className="px-4 py-2 text-gray-800 bg-gray-200 rounded-l-md hover:bg-gray-400"
               onClick={() => changeLanguage("en")}
@@ -154,17 +167,7 @@ const Navbar = () => {
             >
               Norsk
             </button>
-          </div>
-        </div>
-
-        {/* Right side - New Job Button, Notification Icon, Profile */}
-        <div className="flex items-center space-x-6">
-          <NavLink to={"/loginSignup"} onClick={scrollToTop}>
-            {" "}
-            <button className="hidden md:flex items-center space-x-1  bg-orange-600 hover:bg-orange-700 text-white py-1 px-3 rounded-lg font-bold text-xl">
-              <span className="">Join Us</span>
-            </button>
-          </NavLink>
+          </div> ......*/}
 
           <div className="relative languages">
             {/* Trigger for Dropdown */}
@@ -184,30 +187,38 @@ const Navbar = () => {
             {isDropdownOpen && (
               <div className="absolute -left-8 mt-2 bg-gray-900  text-white rounded-md shadow-lg w-80 sm:w-40 z-10">
                 {selectedLanguage !== "En" && (
-                  <button
-                    className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
-                    onClick={() => handleLanguageChange("En")}
-                  >
-                    <img
-                      src={language_1} // English icon/image
-                      alt="English"
-                      className="w-4 h-4 rounded-full mr-2"
-                    />
-                    English
-                  </button>
+               <button
+               className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
+               onClick={() => {
+                 handleLanguageChange("En");
+                 changeLanguage("en");
+               }}
+             >
+               <img
+                 src={language_1} // English icon/image
+                 alt="English"
+                 className="w-4 h-4 rounded-full mr-2"
+               />
+               English
+             </button>
+             
                 )}
                 {selectedLanguage !== "No" && (
-                  <button
-                    className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
-                    onClick={() => handleLanguageChange("No")}
-                  >
-                    <img
-                      src={language_2} // Norsk icon/image
-                      alt="Norsk"
-                      className="w-4 h-4 rounded-full mr-2"
-                    />
-                    Norsk
-                  </button>
+               <button
+               className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
+               onClick={() => {
+                 handleLanguageChange("No");
+                 changeLanguage("no");
+               }}
+             >
+               <img
+                 src={language_1} // English icon/image
+                 alt="English"
+                 className="w-4 h-4 rounded-full mr-2"
+               />
+               English
+             </button>
+             
                 )}
               </div>
             )}
@@ -306,7 +317,7 @@ const Navbar = () => {
             </button>
           </NavLink>
 
-          {/* Language Switcher */}
+          {/* Language Switcher 
           <div className="flex justify-end mb-4">
             <button
               className="px-4 py-2 bg-gray-200 rounded-l-md hover:bg-gray-300"
@@ -320,8 +331,10 @@ const Navbar = () => {
             >
               Nor
             </button>
-          </div>
-        </div>
+          </div>*/}
+
+
+        </div> 
       )}
     </div>
   );
