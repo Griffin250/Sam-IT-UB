@@ -60,7 +60,7 @@ const scrollToTop = ()=>{
         
         {/* Newsletter Section */}
         <div className="col-span-2 sm:col-span-1">
-          <h5 className="text-lg font-semibold mb-4">Subscribe to our newsletter</h5>
+          <h5 className="text-lg font-bold mb-4">Subscribe to our Newsletter</h5>
           <p className="text-sm mb-4">
             The latest news, articles, and resources, sent to your inbox weekly.
           </p>
