@@ -19,10 +19,10 @@ const ProfileCard = ({ name, title, description, email, phone, image }) => {
        
         <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
         <p className="text-sm text-gray-500 mt-1">{title}</p>
-        <p className="text-gray-600 mt-4 ">{description} </p>
+        <p className="text-gray-600 mt-2 ">{description} </p>
 
         {/* Contact Section */}
-        <div className="mt-6 space-y-2">
+        <div className="mt-4 space-y-2">
           <div className="flex items-center text-gray-700">
           <FontAwesomeIcon icon={faPhone} className="mr-4 cursor-pointer" />
               <path d="M2.3 4.1a1 1 0 011.4-.3L7 5.6a1 1 0 01.4 1.3 7.2 7.2 0 003.4 3.4 1 1 0 011.3.4l1.8 3.3a1 1 0 01-.3 1.4l-2.2 1.7a3 3 0 01-3.3 0A14.8 14.8 0 012 8.9a3 3 0 01.3-3.3l1.8-1.5z" />
