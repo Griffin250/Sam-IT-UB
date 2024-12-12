@@ -31,8 +31,8 @@ const ChatAi = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-4 shadow-lg rounded-md">
-      <div className="h-52 overflow-y-auto mb-2">
+    <div className="max-w-md mx-auto p-1 shadow-lg rounded-md">
+      <div className="h-56 overflow-y-auto mb-2">
         {messages.map((msg, index) => (
           <div
             key={index}
