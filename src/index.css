@@ -11,8 +11,11 @@ html, body{
     overscroll-behavior: none;
  
 }
-h1, h2{
+h1, h2, .navbar{
   font-family:sans, serif;
+}
+.navbar ul li{
+  font-size: 18px;
 }
 *{
   padding: 0;
@@ -76,6 +79,7 @@ h1, h2{
     .website-title span {
       font-size: 30px;
     }
+
   }
   
   /* Medium Devices (Tablets in landscape mode, small laptops) */
@@ -97,6 +101,7 @@ h1, h2{
     .website-title span {
       font-size: 36px;
     }
+
   }
   
   
@@ -104,6 +109,9 @@ h1, h2{
 .website-title {
     font-size: 20px;
   }
+   .web-slogan{
+      font-size: 12px;
+    }
   
   /* Extra Small Devices (Phones) */
   @media (max-width: 480px) {

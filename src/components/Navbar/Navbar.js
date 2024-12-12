@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import language_1 from "../../assets/Icons/Language_1.png";
 import language_2 from "../../assets/Icons/Language_2.png";
-import website_logo from "../../assets/Website_logo.png";
+import website_logo from "../../assets/Sam-IT-logo.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -71,14 +71,17 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between max-w-full mx-auto px-4 py-2">
         {/* Left side - Logo */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 -ml-5">
           <NavLink to="/" onClick={scrollToTop}>
             {" "}
             <img
               src={website_logo}
               alt=""
-              className="rounded-full sm:w-30 sm:h-20 w-3/5 sm:w-52 sm:h-30"
+              className="rounded-full sm:w-30 sm:h-20 w-5/6 sm:w-52 sm:h-30"
             />
+            <p className="web-slogan font-serif md:text-2xs text-center bg-gradient-to-r from-orange-700 via--400 via-orange-300 bg-clip-text to-orange-800 text-transparent sm:-mt-5 sm:ml-8 md:-mt-5 md:ml-8 -mt-5 -ml-2 md:text-sm sm:text-sm">
+              UNGDOMS BEDRIFT
+            </p>
           </NavLink>
           <FontAwesomeIcon
             icon={faSearch}
@@ -88,7 +91,7 @@ const Navbar = () => {
 
         {/* Navigation Links - Hidden on small screens */}
 
-        <div className="hidden md:flex items-center space-x-6 text-gray-400">
+        <div className="hidden md:flex items-center space-x-6 text-gray-400 navbar">
           <ul className="hidden md:flex items-center space-x-6 text-gray-400">
             <NavLink to="/" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
@@ -220,7 +223,7 @@ const Navbar = () => {
           </div>
 
           {/* Hamburger Menu - Visible on small screens */}
-          <div className="md:hidden">
+          <div className="md:hidden pl-4">
             <button
               className="text-gray-400 hover:text-white focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -257,7 +260,7 @@ const Navbar = () => {
               }}
             >
               {" "}
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 -mt-4 rounded-md cursor-pointer">
                 About
               </li>
             </NavLink>
@@ -269,7 +272,7 @@ const Navbar = () => {
               }}
             >
               {" "}
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 -mt-4 rounded-md cursor-pointer">
                 Services <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
@@ -281,7 +284,7 @@ const Navbar = () => {
               }}
             >
               {" "}
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 -mt-4 rounded-md cursor-pointer">
                 Support <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
@@ -294,7 +297,7 @@ const Navbar = () => {
               }}
             >
               {" "}
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 -mt-4 rounded-md cursor-pointer">
                 Contact
               </li>
             </NavLink>
