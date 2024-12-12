@@ -8,7 +8,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const ProfileCard = ({ name, title, description, email, phone, image }) => {
   return (
-    <div className="bg-inherit h-3/4 rounded-lg shadow-lg overflow-hidden border border-gray-300 -ml-4 -mr-4">
+    <div className="bg-inherit h-3/4 rounded-lg shadow-lg overflow-hidden border border-gray-300 -ml-4 -mr-4 md:ml-auto md:mr-auto">
       
       {/* Image Section */}
       <img src={image} alt={name} className="w-full h-2/4 object-cover" />
