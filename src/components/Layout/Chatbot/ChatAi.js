@@ -23,7 +23,7 @@ const ChatAi = () => {
     } catch (error) {
       setMessages([
         ...newMessages,
-        { user: "bot", text: "Sorry, something went wrong!." },
+        { user: "bot", text: "Sorry, This Chatbot isn't available right now, try again Later!." },
       ]);
     }
 
