@@ -57,20 +57,20 @@ const ContactForm = () => {
         <p className="text-blue-600 mb-4">
           <a
             href="mailto:sam-it-ub@hotmail.com"
-            className="hover:text-orange-500"
+            className="hover:text-orange-600 hover:translate-x-1 hover:transition-all"
           >
-            sam-it-ub@hotmail.com{" "}
+            sam-it-ub.helpdesk.no{" "}
           </a>
           <br />
-          <a href="tel:+47 429-474 90" className="hover:text-orange-500">
+          <a href="tel:+47 429-474 90" className="hover:text-orange-600 hover:translate-x-1 hover:transition-all">
             {" "}
-            +47 429-474 90{" "}
+            +47 46629764{" "}
           </a>
         </p>
         <h3 className="text-lg font-semibold mb-2">Arendal, Norway</h3>
         <a
           href="https://www.google.com/maps/place/Sam+Eyde+high+school"
-          className="text-blue-600 mb-4 hover:text-orange-700"
+          className="text-blue-600 mb-4 hover:text-orange-700 hover:translate-x-1 hover:transition-all"
           target="blank"
         >
           Østensbuveien 80,
