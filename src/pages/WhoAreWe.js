@@ -17,7 +17,7 @@ const WhoAreWe = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 500);
+    }, 750);
 
     return () => clearTimeout(timer); 
   }, []);
@@ -28,21 +28,24 @@ const WhoAreWe = () => {
         // Tailwind skeleton
         <div className="min-h-screen flex flex-col justify-center bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-16 mt-12 animate-pulse">
           <div className="px-4 mb-8">
-            <div className="h-10 bg-gray-200 rounded w-1/2 m-auto"></div>
+            <div className="h-8 bg-gray-200 rounded w-1/2 m-auto"></div>
             <div className="mt-4 h-6 bg-gray-200 rounded w-3/4 m-auto"></div>
+            <br/>
+            <div className="mt-4 h-6 bg-gray-200 rounded w-4/5 m-auto"></div>
             <br />
             <div className="mt-4 h-6 bg-gray-200 rounded w-2/3 m-auto"></div>
           </div>
           <div className="text-center mb-8">
-            <div className="mt-2 inline-block h-12 bg-gray-200 rounded w-1/3 m-auto"></div>
+            <div className="mt-2 inline-block h-10 bg-gray-200 rounded w-1/3 m-auto"></div>
           </div>
           <div className="flex space-x-4 md:mt-0 m-auto">
-            <div className="h-8 bg-orange-200 rounded w-8"></div>
-            <div className="h-8 bg-orange-200 rounded w-8"></div>
-            <div className="h-8 bg-orange-300 rounded w-8"></div>
+            <div className="h-8 bg-orange-100 rounded w-8"></div>
             <div className="h-8 bg-orange-200 rounded w-8"></div>
             <div className="h-8 bg-orange-300 rounded w-8"></div>
+            <div className="h-8 bg-orange-400 rounded w-8"></div>
+            <div className="h-8 bg-orange-300 rounded w-8"></div>
             <div className="h-8 bg-orange-200 rounded w-8"></div>
+            <div className="h-8 bg-orange-100 rounded w-8"></div>
           </div>
         </div>
       ) : (
