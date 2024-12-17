@@ -17,7 +17,7 @@ const stats = [
   { name: "Offices ", value: "1" },
   { name: "Dedicated colleagues", value: "4" },
   { name: "Hours per week", value: "25+" },
-  { name: "Client Satisfaction", value: "100%" },
+  { name: "Client Satisfaction", value: "94%" },
 ];
 
 export default function Example() {
