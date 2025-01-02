@@ -6,8 +6,7 @@ import WhoAreWe from "../../pages/WhoAreWe";
 import { Button } from "primereact/button";
 import ConsultationBanner from "../ConsultationBanner";
 import ContactForm from "../ContactForm";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 const links = [
   { name: "Open roles", href: "#" },
