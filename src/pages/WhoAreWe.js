@@ -9,6 +9,8 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhoAreWe = () => {
   const { t } = useTranslation();
@@ -20,6 +22,10 @@ const WhoAreWe = () => {
     }, 750);
 
     return () => clearTimeout(timer); 
+    AOS.init({
+      duration:3000,
+      once:false,
+    })
   }, []);
 
   return (
@@ -52,7 +58,7 @@ const WhoAreWe = () => {
         // Main content
         <div className="min-h-screen flex flex-col justify-center bg-gradient-to-r from-blue-200 via-gray-100 to-blue-200 py-16 mt-12">
           {/* Title Section */}
-          <div className="px-4 mb-8">
+          <div className="px-4 mb-8" data-aos="fade-up">
             <h1 className="text-4xl text-center md:text-5xl font-bold text-gray-900">
               {t("whoAreWeTitle")}
             </h1>
@@ -67,7 +73,7 @@ const WhoAreWe = () => {
 
           {/* Button Section */}
           <div className="text-center mb-8">
-            <p className="mt-2 inline-block text-gray-900 font-bold border-orange-600 border py-2 px-6 rounded-md text-4lg">
+            <p className="mt-2 inline-block text-gray-900 font-bold border-orange-600 border py-2 px-6 rounded-md text-4lg" data-aos="fade-right">
               {t("followUs")}
             </p>
           </div>
@@ -77,7 +83,7 @@ const WhoAreWe = () => {
               aria-label="Facebook"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-            >
+              data-aos="fade-left">
               <FontAwesomeIcon icon={faFacebook} className="size-8" />
             </a>
             <a
@@ -85,7 +91,7 @@ const WhoAreWe = () => {
               aria-label="Instagram"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-            >
+              data-aos="fade-left">
               <FontAwesomeIcon icon={faInstagram} className="size-8" />
             </a>
             <a
@@ -93,7 +99,7 @@ const WhoAreWe = () => {
               aria-label="Discord"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-            >
+              data-aos="fade-left">
               <FontAwesomeIcon icon={faDiscord} className="size-8" />
             </a>
             <a
@@ -101,7 +107,7 @@ const WhoAreWe = () => {
               aria-label="Twitter"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-            >
+              data-aos="fade-left">
               <FontAwesomeIcon icon={faXTwitter} className="size-8" />
             </a>
             <a
@@ -109,7 +115,7 @@ const WhoAreWe = () => {
               aria-label="GitHub"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-            >
+              data-aos="fade-left">
               <FontAwesomeIcon icon={faGithub} className="size-8" />
             </a>
             <a
@@ -117,7 +123,7 @@ const WhoAreWe = () => {
               aria-label="YouTube"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-            >
+              data-aos="fade-left">
               <FontAwesomeIcon icon={faYoutube} className="size-8" />
             </a>
           </div>

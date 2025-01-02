@@ -11,6 +11,15 @@ html, body{
     overscroll-behavior: none;
  
 }
+::-webkit-scrollbar{
+  width: 5px;
+  height: 8px;
+ cursor: pointer;
+}
+::-webkit-scrollbar-thumb{
+  background: orangered;
+  width: 5px;
+}
 h1, h2, .navbar{
   font-family:sans, serif;
 }

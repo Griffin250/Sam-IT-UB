@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+##LinkedIn Post structure...
+Exciting Milestone: Building Our Student Company - Sam-IT UB
+
+Over the past month, I’ve been working as a Tech Developer for Sam-IT UB, our student-driven company. Together with three dedicated fellow students, we’ve laid the foundation of this venture—from registration in legal systems to establishing our core business operations.
+
+Sam-IT UB specializes in IT user support and development services, offering cutting-edge solutions to individuals and businesses. Our goal is to deliver reliable, high-quality services that streamline processes and drive innovation.
+
+This journey has given me valuable experience in technology development, entrepreneurship, teamwork, and problem-solving. The images above showcase a glimpse of our team, our work, and the mission we’re committed to delivering.
+
+We’d love for you to check out our work, collaborate with us, and follow our journey!
+🔗 Visit our website: [Add your website link here]
+
+Let’s connect and explore how Sam-IT UB can help you with IT solutions!
+
+#Entrepreneurship #TechDevelopment #StudentCompany #Innovation #ITSolutions #SAMIT
