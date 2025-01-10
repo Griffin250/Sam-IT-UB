@@ -73,16 +73,17 @@ function FaqPage () {
     
   
     return (
-        <section className="leading-relaxed max-w-screen-xl mt-12 mx-auto px-4 md:px-8">
+        <section className="leading-relaxed mx-auto px-4 pt-12 md:px-8 bg-gradient-to-br from-blue-200 via-gray-100">
             <div className="space-y-3 text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
                     Frequently Asked Questions
                 </h1>
-                <p className="text-gray-600 max-w-lg mx-auto text-lg">
-                    Answered all frequently asked questions, Still confused? feel free to contact us.
+                <p className="text-gray-600 max-w-6xl mx-auto text-lg">
+                    Answered all frequently asked questions,<span className="font-bold"> Still confused? </span>
+                     Feel free to <a href="https://sam-it-ub.netlify.app/contactForm" className="text-orange-700  font-bold"> contact us </a>.
                 </p>
             </div>
-            <div className="mt-14 max-w-2xl mx-auto">
+            <div className="mt-14 max-w-6xl mx-auto">
                 {
                     faqsList.map((item, idx) => (
                         <FaqsCard

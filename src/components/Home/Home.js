@@ -6,6 +6,7 @@ import WhoAreWe from "../../pages/WhoAreWe";
 import { Button } from "primereact/button";
 import ConsultationBanner from "../ConsultationBanner";
 import ContactForm from "../ContactForm";
+import FaqPage from "../../pages/Faq";
 
 
 const links = [
@@ -198,7 +199,7 @@ export default function Example() {
           />
         </a>
       </div>
-
+<FaqPage />
       <ContactForm />
     </>
   );
