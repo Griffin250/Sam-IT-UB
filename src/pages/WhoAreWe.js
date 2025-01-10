@@ -11,21 +11,24 @@ import {
 import { useTranslation } from "react-i18next";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
 const WhoAreWe = () => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 3000,
+      once: false,
+    });
+
+    // Set a timer to handle loading state
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 750);
 
-    return () => clearTimeout(timer); 
-    AOS.init({
-      duration:3000,
-      once:false,
-    })
+    // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
   return (
