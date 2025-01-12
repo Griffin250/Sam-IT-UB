@@ -24,10 +24,10 @@ const ProfileCard = ({ name, title, description, email, phone, image }) => {
         {/* Contact Section */}
         <div className="mt-4 space-y-2">
           <div className="flex items-center text-gray-700">
-          <FontAwesomeIcon icon={faPhone} className="mr-4 cursor-pointer" />
+          <FontAwesomeIcon icon={faPhone} className="mr-4 cursor-pointer hidden" />
               <path d="M2.3 4.1a1 1 0 011.4-.3L7 5.6a1 1 0 01.4 1.3 7.2 7.2 0 003.4 3.4 1 1 0 011.3.4l1.8 3.3a1 1 0 01-.3 1.4l-2.2 1.7a3 3 0 01-3.3 0A14.8 14.8 0 012 8.9a3 3 0 01.3-3.3l1.8-1.5z" />
           
-            <p className="cursor-pointer font-bold hover:text-orange-600 hover:translate-x-1 hover:transition-all"> <a href="tel:" >{phone}</a></p>
+            <p className="cursor-pointer font-bold hover:text-orange-600 hover:translate-x-1 hover:transition-all hidden"> <a href="tel:" >{phone}</a></p>
           </div>
 
           <div className="flex items-center text-gray-700">
@@ -62,7 +62,7 @@ const ProfileGrid = () => {
       title: "CTO & Developer",
       description:
         "Isiah is a Developler exceling in both frontend and backend development, delivering seamless solutions",
-      email: "Isiah.sam-it@hotmail.com",
+      email: "Isiah.sam-it-ub@hotmail.com",
       phone: "+47 40569093",
       image: isiah,
     },
