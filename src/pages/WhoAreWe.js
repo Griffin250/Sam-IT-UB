@@ -76,7 +76,7 @@ const WhoAreWe = () => {
 
           {/* Button Section */}
           <div className="text-center mb-8">
-            <p className="mt-2 inline-block text-gray-900 font-bold border-orange-600 border py-2 px-6 rounded-md text-4lg" data-aos="fade-right">
+            <p className="mt-2 inline-block text-gray-900 font-bold border-orange-600 border py-2 px-6 rounded-md text-4lg" data-aos="fade-down">
               {t("followUs")}
             </p>
           </div>
@@ -86,7 +86,7 @@ const WhoAreWe = () => {
               aria-label="Facebook"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-              data-aos="fade-left">
+              data-aos="fade-up">
               <FontAwesomeIcon icon={faFacebook} className="size-8" />
             </a>
             <a
@@ -94,7 +94,7 @@ const WhoAreWe = () => {
               aria-label="Instagram"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-              data-aos="fade-left">
+              data-aos="fade-up">
               <FontAwesomeIcon icon={faInstagram} className="size-8" />
             </a>
             <a
@@ -102,7 +102,7 @@ const WhoAreWe = () => {
               aria-label="Discord"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-              data-aos="fade-left">
+              data-aos="fade-up">
               <FontAwesomeIcon icon={faDiscord} className="size-8" />
             </a>
             <a
@@ -110,7 +110,7 @@ const WhoAreWe = () => {
               aria-label="Twitter"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-              data-aos="fade-left">
+              data-aos="fade-up">
               <FontAwesomeIcon icon={faXTwitter} className="size-8" />
             </a>
             <a
@@ -118,7 +118,7 @@ const WhoAreWe = () => {
               aria-label="GitHub"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-              data-aos="fade-left">
+              data-aos="fade-up">
               <FontAwesomeIcon icon={faGithub} className="size-8" />
             </a>
             <a
@@ -126,7 +126,7 @@ const WhoAreWe = () => {
               aria-label="YouTube"
               target="blank"
               className="text-orange-900 hover:text-orange-600"
-              data-aos="fade-left">
+              data-aos="fade-up">
               <FontAwesomeIcon icon={faYoutube} className="size-8" />
             </a>
           </div>

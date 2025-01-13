@@ -29,7 +29,7 @@ const NotFound = () => {
       {/* Contact & Back to Home */}
       <div className="mt-6 text-center">
         <p className="text-sm md:text-base text-gray-700">
-          Feel free to contact us if you need help, or
+          Feel free to <span className="font-bold text-orange-600">contact us</span>  if you need help, or
         </p>
         <NavLink onClick={scrollToTop}
           to="/"

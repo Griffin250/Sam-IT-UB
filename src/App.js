@@ -28,12 +28,13 @@ const App = () => {
 
 const AppContent = () => {
   const location = useLocation();
-  const hideFooterOnLoginPage = location.pathname === "/loginSignup";
-  const hideNavBarOnLoginPage = location.pathname === "/loginSignup";
+  const hideFooter = location.pathname === "/loginSignup" || location.pathname === "/support";
+  const hideNavBar = location.pathname === "/loginSignup" || location.pathname === "/support";
+ 
   
   return (
     <div>
-      {!hideNavBarOnLoginPage && <Navbar />}
+      {!hideNavBar && <Navbar />}
       <Chatbot />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,11 +43,11 @@ const AppContent = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/products" element={<Product />} />
         <Route path="/support" element={<Support />} />
+        <Route path="*" element={<NotFound/>}/>
         <Route path="/contactForm" element={<ContactForm />} />
         <Route path="/blogPost" element={<BlogPosts />} />
-        <Route path="*" element={<NotFound />} />
       </Routes>
-      {!hideFooterOnLoginPage && <Footer />}
+      {!hideFooter && <Footer />}
     </div>
   );
 };
