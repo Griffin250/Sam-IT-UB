@@ -4,6 +4,8 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+
+      
       //English Translation for Service page
       serviceTitle: "The Service You Deserve,",
       serviceSubtitle: "The Service We Give!",
@@ -93,6 +95,26 @@ const resources = {
         contact_us: "Contact Us",
   
       },
+      
+
+//English Translation for Product page
+  "product": {
+    "header": "Discover Your Perfect Gadget",
+    "subHeader": "Whether you need a laptop for school, business, gaming, or personal work, our experts can help you choose the best quality product to meet your needs.",
+    "imageAlt": "Consultation Service",
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "point1": "Personalized recommendations tailored to your needs.",
+      "point2": "Expert guidance to ensure top quality and value.",
+      "point3": "Access to exclusive deals and trusted brands.",
+      "point4": "Save time and avoid confusion with professional advice."
+    },
+    "cta": {
+      "title": "Still not sure? Let our experts guide you!",
+      "subText": "Book a free consultation, and we'll help you make an informed decision based on your specific needs.",
+      "buttonText": "Talk to an Expert"
+    }
+  },
 
     },
   },
@@ -197,8 +219,24 @@ const resources = {
         contact_us: "Kontakt Oss",
       },
 
-
-
+//Nosrk Translation for Product page
+"product": {
+    "header": "Finn den perfekte dingsen",
+    "subHeader": "Enten du trenger en bærbar PC til skole, jobb, gaming eller personlig bruk, kan våre eksperter hjelpe deg med å velge det beste produktet for dine behov.",
+    "imageAlt": "Konsultasjonstjeneste",
+    "whyChooseUs": {
+      "title": "Hvorfor velge oss?",
+      "point1": "Personlige anbefalinger tilpasset dine behov.",
+      "point2": "Ekspertråd for å sikre topp kvalitet og verdi.",
+      "point3": "Tilgang til eksklusive tilbud og pålitelige merker.",
+      "point4": "Spar tid og unngå forvirring med profesjonelle råd."
+    },
+    "cta": {
+      "title": "Fortsatt usikker? La våre eksperter veilede deg!",
+      "subText": "Bestill en gratis konsultasjon, så hjelper vi deg med å ta en informert beslutning basert på dine spesifikke behov.",
+      "buttonText": "Snakk med en ekspert"
+    }
+  }
 
       
     },

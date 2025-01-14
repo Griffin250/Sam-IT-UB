@@ -8,7 +8,6 @@ import ConsultationBanner from "../ConsultationBanner";
 import ContactForm from "../ContactForm";
 import FaqPage from "../../pages/Faq";
 
-
 const links = [
   { name: "Open roles", href: "#" },
   { name: "Projects", href: "#" },
@@ -23,7 +22,6 @@ const stats = [
 ];
 
 export default function Example() {
-  
   return (
     <>
       <WhoAreWe />
@@ -199,7 +197,7 @@ export default function Example() {
           />
         </a>
       </div>
-<FaqPage />
+      <FaqPage />
       <ContactForm />
     </>
   );
