@@ -28,7 +28,7 @@ const App = () => {
 
 const AppContent = () => {
   const location = useLocation();
-  const hideFooter = location.pathname === "/loginSignup" || location.pathname === "/support";
+  const hideFooter = location.pathname === "/loginSignup" || location.pathname === "/support" || location.pathname === "/notFound";
   const hideNavBar = location.pathname === "/loginSignup" || location.pathname === "/support";
  
   
