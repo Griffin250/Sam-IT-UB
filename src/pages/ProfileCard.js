@@ -1,8 +1,8 @@
 import React from "react";
-import isiah from "../assets/Team/Isiah.png";
-import liam from "../assets/Team/Liam.png";
-import emma from "../assets/Team/Emma.png";
-import erland from "../assets/Team/Erland.png";
+import isiah from "../assets/Team/isiah--.png";
+import liam from "../assets/Team/Liam--.png";
+import emma from "../assets/Team/Emma--.png";
+import erland from "../assets/Team/Erland--.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
