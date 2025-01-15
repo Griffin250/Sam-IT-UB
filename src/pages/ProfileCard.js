@@ -17,8 +17,8 @@ const ProfileCard = ({ name, title, description, email, phone, image }) => {
       
       <div className="p-6 bg-gradient-to-b from-gray-200 to-blue-200">
        
-        <h2 className="text-xl font-semibold text-gray-800">{name}</h2>
-        <p className="text-sm text-gray-500 mt-1">{title}</p>
+        <h2 className="text-xl font-semibold text-center text-gray-800">{name}</h2>
+        <p className="text-sm text-gray-500 mt-1 text-center">{title}</p>
         <p className="text-gray-600 mt-2 ">{description} </p>
 
         {/* Contact Section */}

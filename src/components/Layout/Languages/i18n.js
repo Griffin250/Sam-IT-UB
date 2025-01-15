@@ -116,6 +116,33 @@ const resources = {
     }
   },
 
+
+  //English Translation for Faq Page
+  "faq": {
+    "FaqTitle": "Frequently Asked Questions",
+    "Answered all frequently asked questions, Still confused? Feel free to contact us.":
+      "Answered all frequently asked questions, Still confused? Feel free to contact us.",
+    "What services does your consultancy offer?":
+      "What services does your consultancy offer?",
+    "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency.":
+      "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency.",
+    "How do I know if I need a consultant?":
+      "How do I know if I need a consultant?",
+    "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions.":
+      "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions.",
+    "What is the process for engaging your consultancy services?":
+      "What is the process for engaging your consultancy services?",
+    "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs.":
+      "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs.",
+    "Are your consultancy services industry-specific?":
+      "Are your consultancy services industry-specific?",
+    "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector.":
+      "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector.",
+    "How can consultancy services help improve my business performance?":
+      "How can consultancy services help improve my business performance?",
+    "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth.":
+      "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth.",
+  },
     },
   },
 
@@ -236,8 +263,34 @@ const resources = {
       "subText": "Bestill en gratis konsultasjon, så hjelper vi deg med å ta en informert beslutning basert på dine spesifikke behov.",
       "buttonText": "Snakk med en ekspert"
     }
-  }
+  },
 
+  //Norsk Translation for Faq Page
+  "faq": {
+    "Frequently Asked Questions": "Vanlige spørsmål",
+    "Answered all frequently asked questions, Still confused? Feel free to contact us.":
+      "Svarte på alle vanlige spørsmål. Fortsatt forvirret? Ta gjerne kontakt med oss.",
+    "What services does your consultancy offer?":
+      "Hvilke tjenester tilbyr konsulentfirmaet ditt?",
+    "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency.":
+      "Vi tilbyr et bredt spekter av konsulenttjenester, inkludert forretningsstrategi, markedsanalyse, økonomisk planlegging og operasjonell effektivitet.",
+    "How do I know if I need a consultant?":
+      "Hvordan vet jeg om jeg trenger en konsulent?",
+    "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions.":
+      "Hvis du står overfor utfordringer i virksomheten din, ønsker å forbedre effektiviteten eller trenger ekspertråd for å drive vekst, kan en konsulent gi verdifulle innsikter og løsninger.",
+    "What is the process for engaging your consultancy services?":
+      "Hva er prosessen for å engasjere dine konsulenttjenester?",
+    "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs.":
+      "Prosessen starter vanligvis med en innledende konsultasjon for å forstå dine behov, etterfulgt av et detaljert forslag som beskriver vår tilnærming, tidslinje og kostnader.",
+    "Are your consultancy services industry-specific?":
+      "Er konsulenttjenestene dine bransjespesifikke?",
+    "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector.":
+      "Våre konsulenter har erfaring fra ulike bransjer, noe som gjør at vi kan tilby skreddersydde løsninger som er relevante for din spesifikke sektor.",
+    "How can consultancy services help improve my business performance?":
+      "Hvordan kan konsulenttjenester bidra til å forbedre min bedrifts ytelse?",
+    "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth.":
+      "Konsulenttjenester kan identifisere ineffektivitet, gi strategiske råd og implementere beste praksis, som alle bidrar til forbedret forretningsytelse og vekst.",
+  },
       
     },
   },

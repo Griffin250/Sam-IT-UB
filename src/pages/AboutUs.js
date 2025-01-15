@@ -28,7 +28,7 @@ const AboutUs = () => {
       <div className="flex justify-end p-4 bg-gray-200">
         <button
           onClick={() => handleLanguageChange("en")}
-          className={`px-4 py-2 mr-2 ${
+          className={`px-4 py-2 mr-2 hidden ${
             i18n.language === "en" ? "bg-blue-600 text-white" : "bg-gray-300"
           } rounded`}
         >
@@ -36,7 +36,7 @@ const AboutUs = () => {
         </button>
         <button
           onClick={() => handleLanguageChange("no")}
-          className={`px-4 py-2 ${
+          className={`px-4 py-2 hidden ${
             i18n.language === "no" ? "bg-blue-600 text-white" : "bg-gray-300"
           } rounded`}
         >

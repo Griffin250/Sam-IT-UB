@@ -7,9 +7,19 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
 html, body{
     overscroll-behavior: none;
  
+}
+body p{
+  font-family: "Roboto", serif, sans;
 }
 ::-webkit-scrollbar{
   width: 5px;
@@ -26,11 +36,7 @@ h1, h2, .navbar{
 .navbar ul li{
   font-size: 18px;
 }
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 .blog-section{
   width: 92%;
 }
