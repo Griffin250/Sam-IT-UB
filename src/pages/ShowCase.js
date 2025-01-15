@@ -2,7 +2,6 @@ import React from 'react';
 import faHeadset from '../assets/Icons/iconscontact.png';
 import faClock from '../assets/Icons/responsive-icon-02.png'
 import faClipboardCheck  from '../assets/Icons/plan-icon.png'
-import faLightbulb from '../assets/Icons/solutions-icon.png'
 import faUsers from '../assets/Icons/team-icon.png'
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
