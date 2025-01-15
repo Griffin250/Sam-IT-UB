@@ -2,10 +2,12 @@ import React from 'react'
 import backgroundImage from '../assets/otherImages/BackgroundImage.jpeg';
 import { NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const ConsultationBanner = () => {
+  const {t} = useTranslation()
 const scrollToTop = () =>{
   window.scrollTo({
     top:0,
@@ -14,7 +16,7 @@ const scrollToTop = () =>{
 }
 useEffect(()=>{
   AOS.init({
-    duration:3000,
+    duration:1500,
     once:false,
 });
 }, []);
@@ -33,12 +35,12 @@ useEffect(()=>{
       {/* Content */}
       <div className="relative z-10 max-w-full mx-auto">
         <h3 className="text-xl font-semibold text-white sm:text-4xl" data-aos="fade-down">
-          When it comes to your IT, everything is mission critical.
+          {t("banner.title1")}
           <br />
-          We stand by the expertise and consulting we provide.
+          {t("banner.title2")}
         </h3>
         <NavLink to={"/ContactForm"} onClick={scrollToTop}>  <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-medium text-lg rounded hover:bg-blue-700 focus:outline-none" data-aos="zoom-in">
-          BOOK A CONSULTATION
+          {t("banner.bookingBtn")}
         </button></NavLink>
       </div>
     </div>

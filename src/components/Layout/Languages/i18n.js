@@ -50,6 +50,7 @@ const resources = {
       },
 
 //English Translation for WhoWeAre page
+
       whoAreWeTitle: "Who Are We?",
       whoAreWeDescription: `
         SAM-IT UB is a student-driven company offering IT user support and
@@ -65,6 +66,15 @@ const resources = {
         enhance your digital experience and help you succeed.`,
       followUs: "Follow Us and Find Out More!",
 
+       //English Translation for ChooseSamIT UB  section
+"chooseSamIT":{
+  "h1": "Why choose Sam-IT?",
+  "wrapper1": "Each of our clients has a dedicated contact; get the same person every time you call.",
+  "wrapper2": "Lost time equals lost revenue. We respond immediately when issues occur.",
+  "wrapper3": "A good plan mitigates many possible issues. We tailor your IT plan to meet your needs.",
+  "wrapper4": "We are a Certified Solutions Expert for 20+ leading vendors.",
+  "wrapper5": "We work as an extension of your team. We’ll help you reach your goals."
+},
 
       //English Translation for About Us page
       about_us: {
@@ -118,30 +128,40 @@ const resources = {
 
 
   //English Translation for Faq Page
-  "faq": {
-    "FaqTitle": "Frequently Asked Questions",
-    "Answered all frequently asked questions, Still confused? Feel free to contact us.":
-      "Answered all frequently asked questions, Still confused? Feel free to contact us.",
-    "What services does your consultancy offer?":
-      "What services does your consultancy offer?",
-    "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency.":
-      "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency.",
-    "How do I know if I need a consultant?":
-      "How do I know if I need a consultant?",
-    "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions.":
-      "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions.",
-    "What is the process for engaging your consultancy services?":
-      "What is the process for engaging your consultancy services?",
-    "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs.":
-      "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs.",
-    "Are your consultancy services industry-specific?":
-      "Are your consultancy services industry-specific?",
-    "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector.":
-      "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector.",
-    "How can consultancy services help improve my business performance?":
-      "How can consultancy services help improve my business performance?",
-    "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth.":
-      "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth.",
+"faq": {
+    "pageTitle": "Frequently Asked Questions",
+    "pageDescription": "Answered all frequently asked questions,",
+    "pageStillConfused": "Still confused?",
+    "contactLinkText": "Feel free to contact us.",
+    "servicesQuestion": "What services does your consultancy offer?",
+    "servicesAnswer": "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency.",
+    "needConsultantQuestion": "How do I know if I need a consultant?",
+    "needConsultantAnswer": "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions.",
+    "engagementProcessQuestion": "What is the process for engaging your consultancy services?",
+    "engagementProcessAnswer": "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs.",
+    "industrySpecificQuestion": "Are your consultancy services industry-specific?",
+    "industrySpecificAnswer": "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector.",
+    "businessPerformanceQuestion": "How can consultancy services help improve my business performance?",
+    "businessPerformanceAnswer": "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth."
+  },
+
+//English Translation for banner page
+"banner":{
+  "title1": "When it comes to your IT, everything is mission critical.",
+  "title2": "We stand by the expertise and consulting we provide.",
+  "bookingBtn": "BOOK A CONSULTATION",
+},
+ //English Translation for digital Journey banner
+ "digitalJourney": {
+  "h2": "Empowering Your Digital Journey",
+  "p": "We believe in building lasting partnerships with our clients. Our team is dedicated to providing personalized solutions that meet your - unique business needs, delivering exceptional service and support every step of the way."
+  },
+  
+  //English Translation for discord banner
+  "discordBanner":{
+    "title1": "POWERED BY INNOVATION",
+    "title2": "Join Our Discord Support Community",
+    "p": "Join our community on Discord for seamless tech support and personalized assistance, and experience the difference SAM-IT can make in driving your digital success!"
   },
     },
   },
@@ -200,7 +220,7 @@ const resources = {
 
 
 
-      //Norsk Translation for WhoWeAre page
+    //Norsk Translation for WhoWeAre page
       whoAreWeTitle: "Hvem Er Vi?",
       whoAreWeDescription: `
         SAM-IT UB er et studentdrevet selskap som tilbyr IT-brukerstøtte og
@@ -216,6 +236,14 @@ const resources = {
         forbedre din digitale opplevelse og hjelpe deg å lykkes.`,
       followUs: "Følg Oss og Finn Ut Mer!",
 
+      //English Translation for ChooseSamIT UB  section
+"chooseSamIT":{
+  "h1": "Hvorfor Velge Sam-IT?",
+  "wrapper1": "Hver av våre kunder har en dedikert kontakt; få samme person hver gang du Ringer.",
+  "wrapper2": "Tapt tid er lik tapt inntekt. Vi svarer umiddelbart når problemer oppstår!.",
+  "wrapper3": "En god plan reduserer mange mulige problemer. Vi skreddersyr din IT-plan for å møte dine behov.",
+  "wrapper4": "Vi jobber som en forlengelse av teamet ditt. Vi hjelper deg med å nå dine mål",
+},
 
  //Norsk Translation for About Us page
       about_us: {
@@ -248,7 +276,7 @@ const resources = {
 
 //Nosrk Translation for Product page
 "product": {
-    "header": "Finn den perfekte dingsen",
+    "header": "Finn den perfekte Dingsen",
     "subHeader": "Enten du trenger en bærbar PC til skole, jobb, gaming eller personlig bruk, kan våre eksperter hjelpe deg med å velge det beste produktet for dine behov.",
     "imageAlt": "Konsultasjonstjeneste",
     "whyChooseUs": {
@@ -267,30 +295,42 @@ const resources = {
 
   //Norsk Translation for Faq Page
   "faq": {
-    "Frequently Asked Questions": "Vanlige spørsmål",
-    "Answered all frequently asked questions, Still confused? Feel free to contact us.":
-      "Svarte på alle vanlige spørsmål. Fortsatt forvirret? Ta gjerne kontakt med oss.",
-    "What services does your consultancy offer?":
-      "Hvilke tjenester tilbyr konsulentfirmaet ditt?",
-    "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency.":
-      "Vi tilbyr et bredt spekter av konsulenttjenester, inkludert forretningsstrategi, markedsanalyse, økonomisk planlegging og operasjonell effektivitet.",
-    "How do I know if I need a consultant?":
-      "Hvordan vet jeg om jeg trenger en konsulent?",
-    "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions.":
-      "Hvis du står overfor utfordringer i virksomheten din, ønsker å forbedre effektiviteten eller trenger ekspertråd for å drive vekst, kan en konsulent gi verdifulle innsikter og løsninger.",
-    "What is the process for engaging your consultancy services?":
-      "Hva er prosessen for å engasjere dine konsulenttjenester?",
-    "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs.":
-      "Prosessen starter vanligvis med en innledende konsultasjon for å forstå dine behov, etterfulgt av et detaljert forslag som beskriver vår tilnærming, tidslinje og kostnader.",
-    "Are your consultancy services industry-specific?":
-      "Er konsulenttjenestene dine bransjespesifikke?",
-    "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector.":
-      "Våre konsulenter har erfaring fra ulike bransjer, noe som gjør at vi kan tilby skreddersydde løsninger som er relevante for din spesifikke sektor.",
-    "How can consultancy services help improve my business performance?":
-      "Hvordan kan konsulenttjenester bidra til å forbedre min bedrifts ytelse?",
-    "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth.":
-      "Konsulenttjenester kan identifisere ineffektivitet, gi strategiske råd og implementere beste praksis, som alle bidrar til forbedret forretningsytelse og vekst.",
+    "pageTitle": "Ofte Stilte Spørsmål",
+    "pageDescription": "Svar på de vanligste spørsmålene,",
+    "pageStillConfused": "Er du fortsatt forvirret?",
+    "contactLinkText": "Kontakt oss gjerne.",
+    "servicesQuestion": "Hvilke tjenester tilbyr konsulentene deres?",
+    "servicesAnswer": "Vi tilbyr et bredt spekter av konsulenttjenester, inkludert forretningsstrategi, markedsanalyse, økonomisk planlegging og operasjonell effektivitet.",
+    "needConsultantQuestion": "Hvordan vet jeg om jeg trenger en konsulent?",
+    "needConsultantAnswer": "Hvis du står overfor utfordringer i virksomheten din, ønsker å forbedre effektiviteten eller leter etter ekspertråd for å drive vekst, kan en konsulent gi verdifulle innsikter og løsninger.",
+    "engagementProcessQuestion": "Hva er prosessen for å engasjere konsulenttjenester?",
+    "engagementProcessAnswer": "Prosessen starter vanligvis med en innledende konsultasjon for å forstå dine behov, etterfulgt av et detaljert forslag som skisserer vår tilnærming, tidslinje og kostnader.",
+    "industrySpecificQuestion": "Er konsulenttjenestene deres bransjespesifikke?",
+    "industrySpecificAnswer": "Våre konsulenter har erfaring fra ulike bransjer, noe som gjør at vi kan tilby skreddersydde løsninger som er relevante for din spesifikke virksomhet.",
+    "businessPerformanceQuestion": "Hvordan kan konsulenttjenester bidra til å forbedre virksomhetens ytelse?",
+    "businessPerformanceAnswer": "Konsulenttjenester kan identifisere ineffektivitet, gi strategiske råd og implementere beste praksis, noe som bidrar til forbedret forretningsytelse og vekst."
   },
+  
+
+  //Norsk Translation for Consultation banner Page
+    "banner": {
+      "title1": "Når det gjelder IT-en din, er alt kritisk for suksess.",
+      "title2": "Vi står bak den ekspertisen og rådgivningen vi tilbyr.",
+      "bookingBtn": "BESTILL EN KONSULTASJON",
+    },
+ //Norsk Translation for digital Journey banner
+  "digitalJourney": {
+    "h2": "Styrk Din Digitale Reise",
+    "p": "Vi tror på å bygge varige partnerskap med våre kunder. Vår teamet er dedikert til å tilby personlige løsninger som møtes dine - unike forretningsbehov, levere eksepsjonell service og støtte hvert steg på veien."
+    },
+    
+
+//Norsk Translation for discord banner
+    "discordBanner":{
+      "title1": "DREVET AV INNOVASJON",
+      "title2": "Bli med i Discord Support Community",
+      "p": "Bli med i fellesskapet vårt på Discord for sømløs teknisk støtte og personlig assistanse, og opplev forskjellen SAM-IT kan gjøre i å drive din digitale suksess!"
+    },
       
     },
   },
@@ -303,7 +343,7 @@ i18n.use(initReactI18next).init({
   lng: "en", // Default language
   fallbackLng: "en",
   interpolation: {
-    escapeValue: false, // React already escapes values
+    escapeValue: false, 
   },
 });
 

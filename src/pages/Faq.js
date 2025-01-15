@@ -1,5 +1,6 @@
 'use client'
 import { useRef, useState } from "react"
+import { useTranslation } from "react-i18next"
 
 const FaqsCard = ({ faqsList, idx }) => {
     const answerElRef = useRef(null)
@@ -48,39 +49,40 @@ const FaqsCard = ({ faqsList, idx }) => {
 }
 
 function FaqPage () {
+    const { t } = useTranslation()
+
     const faqsList = [
         {
-            q: "What services does your consultancy offer?",
-            a: "We offer a wide range of consultancy services including business strategy, market analysis, financial planning, and operational efficiency."
+            q: t("faq.servicesQuestion"),
+            a: t("faq.servicesAnswer")
         },
         {
-            q: "How do I know if I need a consultant?",
-            a: "If you're facing challenges in your business, seeking to improve efficiency, or looking for expert advice to drive growth, a consultant can provide valuable insights and solutions."
+            q: t("faq.needConsultantQuestion"),
+            a: t("faq.needConsultantAnswer")
         },
         {
-            q: "What is the process for engaging your consultancy services?",
-            a: "The process typically starts with an initial consultation to understand your needs, followed by a detailed proposal outlining our approach, timeline, and costs."
+            q: t("faq.engagementProcessQuestion"),
+            a: t("faq.engagementProcessAnswer")
         },
         {
-            q: "Are your consultancy services industry-specific?",
-            a: "Our consultants have experience across various industries, allowing us to provide tailored solutions that are relevant to your specific business sector."
+            q: t("faq.industrySpecificQuestion"),
+            a: t("faq.industrySpecificAnswer")
         },
         {
-            q: "How can consultancy services help improve my business performance?",
-            a: "Consultancy services can identify inefficiencies, provide strategic advice, and implement best practices, all of which contribute to improved business performance and growth."
+            q: t("faq.businessPerformanceQuestion"),
+            a: t("faq.businessPerformanceAnswer")
         }
     ];
-    
-  
+
     return (
         <section className="leading-relaxed mx-auto px-4 pt-12 md:px-8 bg-gradient-to-br from-blue-200 via-gray-100">
             <div className="space-y-3 text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
-                    Frequently Asked Questions
+                    {t("faq.pageTitle")}
                 </h1>
                 <p className="text-gray-600 max-w-6xl mx-auto text-lg">
-                    Answered all frequently asked questions,<span className="font-bold"> Still confused? </span>
-                     Feel free to <a href="https://sam-it-ub.netlify.app/contactForm" className="text-orange-700  font-bold"> contact us </a>.
+                    {t("faq.pageDescription")} <span className="font-bold"> {t("faq.pageStillConfused")} </span>
+                    {t("faq.contactLinkText")}
                 </p>
             </div>
             <div className="mt-14 max-w-6xl mx-auto">

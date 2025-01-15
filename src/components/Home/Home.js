@@ -7,6 +7,7 @@ import { Button } from "primereact/button";
 import ConsultationBanner from "../ConsultationBanner";
 import ContactForm from "../ContactForm";
 import FaqPage from "../../pages/Faq";
+import { useTranslation } from "react-i18next";
 
 const links = [
   { name: "Open roles", href: "#" },
@@ -22,6 +23,7 @@ const stats = [
 ];
 
 export default function Example() {
+  const { t } = useTranslation()
   return (
     <>
       <WhoAreWe />
@@ -63,13 +65,10 @@ export default function Example() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center align-middle justify-center">
           <div className="m-auto max-w-4xl">
             <h2 className="text-2xl font-semibold  text-white sm:text-6xl text-center m-auto">
-              Empowering Your Digital Journey
+              {t("digitalJourney.h2")}
             </h2>
             <p className="mt-8 text-pretty text-2xl font-medium justify-center flex text-gray-300 sm:text-xl/8">
-              We believe in building lasting partnerships with our clients. Our
-              team is dedicated to providing personalized solutions that meet
-              your - unique business needs, delivering exceptional service and
-              support every step of the way.
+            {t("digitalJourney.p")}
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -96,11 +95,11 @@ export default function Example() {
 
       <div className="bg-gradient-to-bl from-blue-200 via-gray-200 to-blue-100 py-12 px-6 md:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Heading */}
+        
           <h2 className="text-3xl md:text-5xl sm:text-4xl font-bold mb-2 text-gray-800">
             Lets bring your Dreams to Life
           </h2>
-          {/* Description */}
+       
           <p className="text-gray-600 max-w-3xl mx-auto mb-12">
             We provide everything you need to develop, deploy, and maintain your
             applications seamlessly. <br />
@@ -174,18 +173,18 @@ export default function Example() {
           <i className="pi pi-discord text-2xl sm:text-3xl"></i>&nbsp;
           <span className="text-lg sm:text-2xl md:text-3xl bg-gradient-to-r from-orange-600 via-blue-400 to-orange-500 bg-clip-text text-transparent">
             {" "}
-            POWERED BY INNOVATION
+            {t("discordBanner.title1")}
           </span>
         </div>
 
         <div className="text-900 font-bold text-2xl sm:text-4xl md:text-5xl mb-3">
-          Join Our Discord Support Community
+           {t("discordBanner.title2")}
         </div>
 
         <div className="text-700 text-xl sm:text-2xl mb-4 sm:mb-8 mt-4 sm:mt-5 w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 m-auto">
-          Join our community on Discord for seamless tech support and
-          personalized assistance, and experience the difference SAM-IT can make
-          in driving your digital success!
+        <p> 
+        {t("discordBanner.p")}
+        </p>
         </div>
 
         <a href="https://discord.gg/sBrzuMpt" className="" target="blank">
