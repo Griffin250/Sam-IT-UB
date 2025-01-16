@@ -97,14 +97,12 @@ export default function Example() {
         <div className="max-w-4xl mx-auto text-center">
         
           <h2 className="text-3xl md:text-5xl sm:text-4xl font-bold mb-2 text-gray-800">
-            Lets bring your Dreams to Life
+            {t("dreamsToLife.title")}
           </h2>
        
           <p className="text-gray-600 max-w-3xl mx-auto mb-12">
-            We provide everything you need to develop, deploy, and maintain your
-            applications seamlessly. <br />
-            Our team is here to help you at every step, from concept to launch,
-            ensuring you have the right tools and support to achieve your goals.
+           {t("dreamsToLife.intro1")}<br />
+            {t("dreamsToLife.intro2")}
           </p>
         </div>
         {/* Feature Cards */}
@@ -112,56 +110,47 @@ export default function Example() {
           {/* Push to Deploy */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card dream_card">
             <h3 className="text-xl font-bold mb-2 text-gray-700">
-              Push to deploy
+            {t("dreamsToLife.1h3")}
+              
             </h3>
             <p className=" ">
-              Easily bring your applications to life with our streamlined
-              deployment services. With just a few steps, your app can be live
-              and accessible. <br />
-              Our platform simplifies the deployment process so you can focus on
-              what truly matters — building a great product.
+            {t("dreamsToLife.1p1")}
+             <br />
+             {t("dreamsToLife.1p2")}
             </p>
           </div>
 
           {/* SSL Certificates */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card">
             <h3 className="text-xl font-bold mb-2 text-gray-700">
-              SSL certificates
+            {t("dreamsToLife.2h3")}
             </h3>
             <p className="">
-              We take security seriously. All our services come with SSL
-              certificates to protect your app and user data, ensuring a secure
-              environment and building trust with your users.
+            {t("dreamsToLife.2p1")}
               <br />
-              Enjoy peace of mind knowing your application meets industry
-              security standards.
+              {t("dreamsToLife.2p2")}
             </p>
           </div>
           {/* Simple Queues */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer dream_card">
             <h3 className="text-xl font-bold mb-2 text-gray-700">
-              Reliable Support
+            {t("dreamsToLife.3h3")}
             </h3>
             <p className="">
-              Our team is dedicated to providing you with responsive,
-              knowledgeable support.
+            {t("dreamsToLife.3p1")} 
               <br />
-              Whether it’s troubleshooting or guidance on best practices, we're
-              here to assist you every step of the way so you can focus on your
-              core business.
+              {t("dreamsToLife.3p2")}
             </p>
           </div>
           {/* Advanced Security */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer hover:ease-in-out dream_card">
             <h3 className="text-xl font-bold mb-2 text-gray-700">
-              Advanced security
+            {t("dreamsToLife.3h3")}
             </h3>
             <p className="">
-              Safeguard your application with advanced security measures
-              tailored to your needs. <br />
-              We provide multi-layered protection, monitoring, and proactive
-              threat management to keep your data and users safe from
-              vulnerabilities.
+            {t("dreamsToLife.4p1")}
+              <br />
+            {t("dreamsToLife.4p2")}
             </p>
           </div>
         </div>

@@ -5,8 +5,8 @@ import {
   faBars,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
-import language_1 from "../../assets/Icons/Language_1.png";
-import language_2 from "../../assets/Icons/Language_2.png";
+import English from "../../assets/Icons/English.png";
+import Norsk from "../../assets/Icons/Norsk.png";
 import website_logo from "../../assets/Sam-IT-logo.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -18,7 +18,7 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0); // Number to track last scroll position
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("En"); // Default language
+  const [selectedLanguage, setSelectedLanguage] = useState("No"); // Default language
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language); // Update the selected language
@@ -176,7 +176,7 @@ const Navbar = () => {
               className="flex items-center cursor-pointer p-2  rounded-md"
             >
               <img
-                src={selectedLanguage === "En" ? language_1 : language_2}
+                src={selectedLanguage === "En" ? English : Norsk}
                 alt="Selected Language"
                 className="w-6 h-6 rounded-full mr-2"
               />
@@ -186,22 +186,6 @@ const Navbar = () => {
             {/* Dropdown Menu */}
             {isDropdownOpen && (
               <div className="absolute -left-8 mt-2 bg-gray-900  text-white rounded-md shadow-lg w-80 sm:w-40 z-10">
-                {selectedLanguage !== "En" && (
-                  <button
-                    className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
-                    onClick={() => {
-                      handleLanguageChange("En");
-                      changeLanguage("en");
-                    }}
-                  >
-                    <img
-                      src={language_1} // English icon/image
-                      alt="English"
-                      className="w-4 h-4 rounded-full mr-2"
-                    />
-                    English
-                  </button>
-                )}
                 {selectedLanguage !== "No" && (
                   <button
                     className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
@@ -211,11 +195,27 @@ const Navbar = () => {
                     }}
                   >
                     <img
-                      src={language_2} //Norsk icon/image
+                      src={Norsk} // English icon/image
                       alt="Norsk"
                       className="w-4 h-4 rounded-full mr-2"
                     />
                     Norsk
+                  </button>
+                )}
+                {selectedLanguage !== "En" && (
+                  <button
+                    className="px-4 py-2 hover:bg-gray-700 flex items-center w-full text-left"
+                    onClick={() => {
+                      handleLanguageChange("En");
+                      changeLanguage("en");
+                    }}
+                  >
+                    <img
+                      src={English} //Norsk icon/image
+                      alt="English"
+                      className="w-4 h-4 rounded-full mr-2"
+                    />
+                    English
                   </button>
                 )}
               </div>

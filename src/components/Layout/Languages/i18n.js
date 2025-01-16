@@ -151,6 +151,27 @@ const resources = {
   "title2": "We stand by the expertise and consulting we provide.",
   "bookingBtn": "BOOK A CONSULTATION",
 },
+
+ //Enlish Translation for DreamsToLife section
+ "dreamsToLife" : {
+  "title": " Lets bring your Dreams to Life",
+  "intro1": " We provide everything you need to develop, deploy, and maintain your applications seamlessly.",
+  "intro2": " Our team is here to help you at every step, from concept to launch, ensuring you have the right tools and support to achieve your goals. ",
+  "1h3": " Push to deploy",
+  "1p1": " Easily bring your applications to life with our streamlined deployment services. With just a few steps, your app can be live and accessible.",
+  "1p2": " Our platform simplifies the deployment process so you can focus on what truly matters — building a great product.",
+  "2h3": " SSL certificates",
+  "2p1": " We take security seriously. All our services come with SSL certificates to protect your app and user data, ensuring a secure environment and building trust with your users.",
+  "2p2": "Enjoy peace of mind knowing your application meets industry security standards. ",
+  "3h3": " Reliable Support",
+  "3p1": " Our team is dedicated to providing you with responsive, knowledgeable support.",
+  "3p2": "   Whether it’s troubleshooting or guidance on best practices, we're here to assist you every step of the way so you can focus on your core business.",
+  "4h3": " Advanced security",
+  "4p1": " Safeguard your application with advanced security measures tailored to your needs.",
+  "4p2": "We provide multi-layered protection, monitoring, and proactive threat management to keep your data and users safe from vulnerabilities. ",
+
+},
+
  //English Translation for digital Journey banner
  "digitalJourney": {
   "h2": "Empowering Your Digital Journey",
@@ -236,7 +257,7 @@ const resources = {
         forbedre din digitale opplevelse og hjelpe deg å lykkes.`,
       followUs: "Følg Oss og Finn Ut Mer!",
 
-      //English Translation for ChooseSamIT UB  section
+      //Norsk Translation for ChooseSamIT UB  section
 "chooseSamIT":{
   "h1": "Hvorfor Velge Sam-IT?",
   "wrapper1": "Hver av våre kunder har en dedikert kontakt; få samme person hver gang du Ringer.",
@@ -324,6 +345,26 @@ const resources = {
     "p": "Vi tror på å bygge varige partnerskap med våre kunder. Vår teamet er dedikert til å tilby personlige løsninger som møtes dine - unike forretningsbehov, levere eksepsjonell service og støtte hvert steg på veien."
     },
     
+ //Norsk Translation for DreamsToLife section
+ "dreamsToLife" : {
+  "title": " La oss gjøre Drømmene dine til Virkelighet ",
+  "intro1": " Vi tilbyr alt du trenger for å utvikle, distribuere og vedlikeholde applikasjonene dine sømløst.",
+  "intro2": " Teamet vårt er her for å hjelpe deg på hvert trinn, fra konsept til lansering, for å sikre at du har de riktige verktøyene og støtten for å nå dine mål. ",
+  "1h3": " Trykk for å Distribuere",
+  "1p1": " Få applikasjonene dine til live med våre strømlinjeformede distribusjonstjenester. Med bare noen få trinn kan appen din være live og tilgjengelig.",
+  "1p2": " Plattformen vår forenkler distribusjonsprosessen slik at du kan fokusere på det som virkelig betyr noe – å bygge et flott produkt.",
+  "2h3": " SSL Sertifikater",
+  "2p1": " Vi tar sikkerhet på alvor. Alle tjenestene våre kommer med SSL-sertifikater for å beskytte appen og brukerdataene dine, for å sikre et sikkert miljø og bygge tillit hos brukerne dine.",
+  "2p2": "Nyt trygghet når du vet at applikasjonen din oppfyller bransjesikkerhetsstandarder.",
+  "3h3": " Pålitelig Støtte",
+  "3p1": " Teamet vårt er dedikert til å gi deg responsiv, kunnskapsrik støtte.",
+  "3p2": "Enten det er feilsøking eller veiledning om beste praksis, er vi her for å hjelpe deg hele veien slik at du kan fokusere på kjernevirksomheten din.",
+  "4h3": " Avansert Sikkerhet",
+  "4p1": " Beskytt applikasjonen din med avanserte sikkerhetstiltak skreddersydd for dine behov.",
+  "4p2": "Vi tilbyr flerlags beskyttelse, overvåking og proaktiv trusselhåndtering for å holde dataene dine og brukerne dine trygge mot sårbarheter.",
+
+},
+
 
 //Norsk Translation for discord banner
     "discordBanner":{
@@ -340,8 +381,8 @@ const resources = {
 // Initialize i18n
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en", // Default language
-  fallbackLng: "en",
+  lng: "no", // Default language
+  fallbackLng: "no",
   interpolation: {
     escapeValue: false, 
   },
