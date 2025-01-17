@@ -16,7 +16,7 @@ const ChatAi = () => {
     setMessages(newMessages);
 
     try {
-      const response = await axios.post("http://localhost:5000/chat", {
+      const response = await axios.post("https://chatbot-8taw.onrender.com/chat", {
         message: input,
       });
       setMessages([...newMessages, { user: "bot", text: response.data.reply }]);
