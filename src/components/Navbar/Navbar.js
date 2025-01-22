@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -12,6 +13,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true); // Boolean to toggle navbar visibility
@@ -21,8 +23,8 @@ const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("No"); // Default language
 
   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language); // Update the selected language
-    setIsDropdownOpen(false); // Close the dropdown
+    setSelectedLanguage(language); 
+    setIsDropdownOpen(false); 
   };
 
   useEffect(() => {
@@ -61,6 +63,21 @@ const Navbar = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
+
+  const [isSupportDropdownOpen, setIsSupportDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsDropdownOpen(false); // Close dropdown
+    }
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
 
   return (
     <div
@@ -110,12 +127,32 @@ const Navbar = () => {
                 Services
               </li>
             </NavLink>
-            <NavLink to="/support" onClick={scrollToTop}>
-              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Support{" "}
-                {/*.....<FontAwesomeIcon icon={faChevronDown} />......*/}
-              </li>
-            </NavLink>
+            <div className="relative">
+      {/* Dropdown Trigger */}
+      <button
+        className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer flex items-center"
+        onClick={() => setIsSupportDropdownOpen(!isSupportDropdownOpen)}
+      >
+        Support <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
+      </button>
+
+      {/* Dropdown Menu */}
+      {isSupportDropdownOpen && (
+        <div className="absolute left-0 mt-2 bg-gray-900 text-white rounded-md shadow-lg w-40 z-10">
+          <ul className="flex flex-col">
+            <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+              <NavLink to="/FaqPage"> <a href="##" onClick={scrollToTop}>FAQ</a></NavLink>
+            </li>
+            <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+              <a href="/support/contact-support">Contact Support</a>
+            </li>
+            <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+              <a href="/support/user-guides">User Guides</a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
 
             <NavLink to="/contactForm" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">

