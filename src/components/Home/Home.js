@@ -145,7 +145,7 @@ export default function Example() {
           {/* Advanced Security */}
           <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer hover:ease-in-out dream_card">
             <h3 className="text-xl font-bold mb-2 text-gray-700">
-            {t("dreamsToLife.3h3")}
+            {t("dreamsToLife.4h3")}
             </h3>
             <p className="">
             {t("dreamsToLife.4p1")}

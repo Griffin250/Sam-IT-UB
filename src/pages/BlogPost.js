@@ -13,6 +13,7 @@ import {
   faBackwardStep,
   faForwardStep,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const BlogPosts = () => {
   const scrollRef = useRef(null);
@@ -37,51 +38,49 @@ const BlogPosts = () => {
     }
   }, [currentSlide]);
 
+  const {t} = useTranslation()
+
   return (
     <>
-      <div className="bg-gradient-to-br from-blue-500 via-blue-400 to-gray-500 w-4/5 m-auto blog-section-divider">
+      <div className="bg-gradient-to-br from-blue-500 via-blue-400 to-gray-500 w-5/6 m-auto blog-section-divider ">
         {" "}
       </div>
       <div className="container mx-auto px-8 py-8 w-full bg-gradient-to-br from-blue-100 via-gray-100 to-blue-200">
         <h1 className="text-3xl font-bold text-center mb-8 ">
-          Latest News & Blog Posts
+        {t("blog.blogTitle")}
         </h1>
         <p className="text-center mb-8 text-lg text-gray-600">
-          Stay updated on what's happening with our latest posts.
+           {t("blog.blogDesc")}.
         </p>
         <div
           ref={scrollRef}
           className="blog-section flex m-auto overflow-x-hidden space-x-4 snap-x snap-mandatory scrollbar-hidden blog-section"
         >
           {/* Repeat your blog section cards here */}
-          <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
+          <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start hover:shadow-xl">
             <img
               src={Students}
               alt="New offices in Arendal"
               className="w-full h-40 object-cover rounded-md mb-4"
             />
             <h2 className="text-lg font-bold text-gray-50 bg-gradient-to-r from-blue-500 to-blue-200 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              Our Office Location
+              {t("blog.blog_1_h2")}
             </h2>
             <h3 className="font-bold text-gray-600 mb-2">
-              Welcom to our offices in Arendal
+            {t("blog.blog_1_h3")}
             </h3>
             <p className="text-gray-600 text-sm">
-              At Sam-IT UB, we're excited to announce our expanded presence in
-              Arendal, where we continue to offer IT support and solutions to
-              everyone. <br />
-              Our new office in Arendal serves as a hub for innovation and
-              collaboration, where...
+            {t("blog.blog_1_p1")} <br /> {t("blog.blog_1_p2")}
             </p>
             <a
               href="NoLink"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600 "
             >
-              Learn More &rarr;
+               {t("blog.blogLink")} &rarr;
             </a>
           </div>
 
-          {/* Repeat for other blog posts */}
+          {/*  blog posts  2*/}
 
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
@@ -90,23 +89,22 @@ const BlogPosts = () => {
               className="w-full h-40 object-cover rounded-md mb-4"
             />
             <h2 className="text-lg font-bold text-gray-50 bg-gradient-to-r from-blue-500 to-blue-200 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              User Support
+            {t("blog.blog_2_h2")}
             </h2>
             <h3 className="font-bold text-gray-600 mb-2">
-              5 Common IT Problems and How to Solve Them
+            {t("blog.blog_2_h3")}
             </h3>
             <p className="text-gray-600 text-sm">
-              Sam-IT UB provides reliable IT support services, including
-              troubleshooting, software installation, and cybersecurity. Our
-              team ensures smooth and secure operations...
+            {t("blog.blog_2_p")}
             </p>
             <a
               href="NoLink"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
-              Learn More &rarr;
+             {t("blog.blogLink")} &rarr;
             </a>
           </div>
+            {/*  blog posts  3*/}
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
               src={UpcomingEvent}
@@ -114,15 +112,13 @@ const BlogPosts = () => {
               className="w-full h-40 object-cover rounded-md mb-4"
             />
             <h2 className="text-lg font-bold text-gray-900 bg-gradient-to-r from-orange-700 via-orange-200 to-orange-500 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              Upcoming Event!
+            {t("blog.blog_3_h2")}
             </h2>
             <h3 className="font-bold text-gray-600 mb-2">
-              IT Networking Event at Sam Eyde Vgs
+            {t("blog.blog_3_h3")}
             </h3>
             <p className="text-gray-600 text-sm">
-              We at Sam-IT UB are excited to announce that we will be present at
-              the TECH scene's new offices at Sam Eyde High School, where we
-              will...
+            {t("blog.blog_3_p")}
             </p>
 
             <a
@@ -130,10 +126,10 @@ const BlogPosts = () => {
               target="blank"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
-              Learn More &rarr;
+              {t("blog.blogLink")} &rarr;
             </a>
           </div>
-
+ {/*  blog posts  4*/}
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
               src={AI_Robot}
@@ -141,25 +137,23 @@ const BlogPosts = () => {
               className="w-full h-40 object-cover rounded-md mb-4"
             />
             <h2 className="text-lg font-bold text-gray-50 bg-gradient-to-r from-blue-500 to-blue-200 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              The Future of IT
+               {t("blog.blog_4_h2")}
             </h2>
             <h3 className="font-bold text-gray-600 mb-2">
-              Trends to Watch in 2024 and Beyond
+            {t("blog.blog_4_h3")}
             </h3>
             <p className="text-gray-600 text-sm">
-              As technology evolves rapidly, staying ahead of key IT trends in
-              2024 and beyond is crucial for businesses and individuals to
-              maintain a competitive edge and therefore, Sam-IT is...
+            {t("blog.blog_4_p")}
             </p>
             <a
               href="NoLink"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
-              Learn More &rarr;
+              {t("blog.blogLink")} &rarr;
             </a>
           </div>
 
-          {/* Repeat for other blog posts */}
+          {/* Repeat for other 5 blog */}
 
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
@@ -168,22 +162,22 @@ const BlogPosts = () => {
               className="w-full h-40 object-cover rounded-md mb-4"
             />
             <h2 className="text-lg font-bold text-gray-50 bg-gradient-to-r from-blue-500 to-blue-200 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              Are You Hiring an IPS?
+            {t("blog.blog_5_h2")}
             </h2>
             <h3 className="font-bold text-gray-600 mb-2">
-              What to Look for When Choosing an IT Service Provider
+            {t("blog.blog_5_h3")}
             </h3>
             <p className="text-gray-600 text-sm">
-              It is important to find an employer that aligns with your values
-              and work style. If you value work-life balance, you should...
+            {t("blog.blog_5_p")}
             </p>
             <a
               href="NoLink"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600k"
             >
-              Learn More &rarr;
+              {t("blog.blogLink")} &rarr;
             </a>
           </div>
+          {/* Repeat for other 6 blog */}
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
               src={UpcomingEvent_2}
@@ -191,15 +185,13 @@ const BlogPosts = () => {
               className="w-full h-40 object-cover rounded-xl mb-4"
             />
             <h2 className="text-lg font-bold text-gray-900 bg-gradient-to-r from-orange-700 via-orange-200 to-orange-500 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              Upcoming Event!
+            {t("blog.blog_6_h2")}
             </h2>
             <h3 className="font-bold text-gray-600 mb-2">
-              Slush'D Energy 2025-Are Your Coming?
+            {t("blog.blog_6_h3")}
             </h3>
             <p className="text-gray-600 text-sm">
-              Digin is co-hosting Slush'D Energy on March 12, 2025, in Mandal,
-              bringing together startups, investors, and industry leaders to
-              focus on sustainability, clean-tech, energy, AI...
+            {t("blog.blog_6_p")}
             </p>
 
             <a
@@ -207,9 +199,10 @@ const BlogPosts = () => {
               target="blank"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
-              Learn More &rarr;
+              {t("blog.blogLink")} &rarr;
             </a>
           </div>
+           {/* Repeat for other 7 blog */}
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
               src={Sam_IT_Poster}
@@ -217,24 +210,23 @@ const BlogPosts = () => {
               className="w-full h-40 object-cover rounded-md mb-4"
             />
             <h2 className="text-lg font-bold text-gray-50 bg-gradient-to-r from-blue-500 to-blue-200 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              {" "}
-              Sam-IT UB Day
+            {t("blog.blog_7_h2")}  {" "}
+              
             </h2>
             <h3 className="font-bold text-gray-600 mb-2">
-              Launching Our Project Posters to the Public
+            {t("blog.blog_7_h3")}
             </h3>
             <p className="text-gray-600 text-sm">
-              Sam-IT UB are thrilled to announce that we will soon begin
-              distributing our project posters as part of our advertising
-              campaign....
+            {t("blog.blog_7_p")}
             </p>
             <a
               href="NoLink"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
-              Learn More &rarr;
+              {t("blog.blogLink")} &rarr;
             </a>
           </div>
+           {/* Repeat for other 8 blog */}
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
               src={Cyber}
@@ -244,18 +236,16 @@ const BlogPosts = () => {
 
             {/* Enhanced H2 Title */}
             <h2 className="text-lg font-bold text-gray-50 bg-gradient-to-r from-blue-500 to-blue-200 rounded-md py-2 px-3 mb-4 text-center shadow-md">
-              Cyber Security
+            {t("blog.blog_8_h2")}
             </h2>
 
             {/* Improved H3 Title */}
             <h3 className="font-bold text-gray-600 mb-2">
-              Cybersecurity Best Practices for Businesses
+            {t("blog.blog_8_h3")}
             </h3>
 
             <p className="text-gray-600 text-sm">
-              In today’s digital world, protecting your business from cyber
-              threats is vital. Sam-IT UB wants to share key practices to secure
-              data, prevent breaches, and keep your business...
+            {t("blog.blog_8_p")}
             </p>
 
             <a
@@ -263,11 +253,11 @@ const BlogPosts = () => {
               target="blank"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
-              Learn More &rarr;
+             {t("blog.blogLink")} &rarr;
             </a>
           </div>
 
-          {/* Repeat for other blog posts */}
+           {/* Repeat for other 9 blog */}
 
           <div className="flex-none w-80 bg-white shadow-lg rounded-lg p-4 snap-start">
             <img
@@ -290,7 +280,7 @@ const BlogPosts = () => {
               href="NoLink"
               className="text-blue-300 mt-4 block hover:border-b-2 hover:text-blue-600"
             >
-              Learn More &rarr;
+              {t("blog.blogLink")} &rarr;
             </a>
           </div>
 

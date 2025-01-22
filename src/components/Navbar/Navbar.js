@@ -13,7 +13,6 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true); // Boolean to toggle navbar visibility
@@ -23,8 +22,8 @@ const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("No"); // Default language
 
   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language); 
-    setIsDropdownOpen(false); 
+    setSelectedLanguage(language);
+    setIsDropdownOpen(false);
   };
 
   useEffect(() => {
@@ -58,26 +57,31 @@ const Navbar = () => {
   };
 
   const { i18n } = useTranslation();
+  const languageDropdownRef = useRef(null); // Language dropdown ref
+    const supportDropdownRef = useRef(null);
 
   // Function to change language
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    
   };
 
   const [isSupportDropdownOpen, setIsSupportDropdownOpen] = useState(false);
-  const dropdownRef = useRef(null);
-useEffect(() => {
-  const handleClickOutside = (event) => {
-    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-      setIsDropdownOpen(false); // Close dropdown
-    }
-  };
 
-  document.addEventListener("mousedown", handleClickOutside);
-  return () => {
-    document.removeEventListener("mousedown", handleClickOutside);
-  };
-}, []);
+  //Close the dropdown on mouse clicking outside.
+  const dropdownRef = useRef(null);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div
@@ -127,32 +131,38 @@ useEffect(() => {
                 Services
               </li>
             </NavLink>
-            <div className="relative">
-      {/* Dropdown Trigger */}
-      <button
-        className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer flex items-center"
-        onClick={() => setIsSupportDropdownOpen(!isSupportDropdownOpen)}
-      >
-        Support <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
-      </button>
+            <div className="relative" ref={supportDropdownRef}>
+              {/* Dropdown Trigger */}
+              <button
+                className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer flex items-center"
+                onClick={() => setIsSupportDropdownOpen(!isSupportDropdownOpen)}
+              >
+                Support{" "}
+                <FontAwesomeIcon icon={faChevronDown} className="ml-2" />
+              </button>
 
-      {/* Dropdown Menu */}
-      {isSupportDropdownOpen && (
-        <div className="absolute left-0 mt-2 bg-gray-900 text-white rounded-md shadow-lg w-40 z-10">
-          <ul className="flex flex-col">
-            <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-              <NavLink to="/FaqPage"> <a href="##" onClick={scrollToTop}>FAQ</a></NavLink>
-            </li>
-            <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-              <a href="/support/contact-support">Contact Support</a>
-            </li>
-            <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-              <a href="/support/user-guides">User Guides</a>
-            </li>
-          </ul>
-        </div>
-      )}
-    </div>
+              {/* Dropdown Menu */}
+              {isSupportDropdownOpen && (
+                <div className="absolute left-0 mt-2 bg-gray-900 text-white rounded-md shadow-lg w-40 z-10">
+                  <ul className="flex flex-col">
+                    <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer ">
+                      <NavLink to="/faq">
+                        {" "}
+                        <a href="faq" className="text-sm">
+                          FAQ
+                        </a>
+                      </NavLink>
+                    </li>
+                    <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+                      <a href="/contactForm" className="text-sm">Quick Support</a>
+                    </li>
+                    <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer">
+                      <a href="/support/user-guides" className="text-sm">User Guides</a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
 
             <NavLink to="/contactForm" onClick={scrollToTop}>
               <li className="hover:text-white font-bold hover:bg-gray-700 p-2 rounded-md cursor-pointer">
@@ -206,7 +216,7 @@ useEffect(() => {
             </button>
           </div> ......*/}
 
-          <div className="relative languages">
+          <div className="relative languages" ref={languageDropdownRef}>
             {/* Trigger for Dropdown */}
             <div
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}

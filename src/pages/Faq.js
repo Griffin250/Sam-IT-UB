@@ -75,7 +75,7 @@ function FaqPage () {
     ];
 
     return (
-        <section className="leading-relaxed mx-auto px-4 pt-12 md:px-8 bg-gradient-to-br from-blue-200 via-gray-100">
+        <section className="leading-relaxed mx-auto px-4 pt-24 md:px-8 bg-gradient-to-br from-blue-200 via-gray-100">
             <div className="space-y-3 text-center">
                 <h1 className="text-3xl text-gray-800 font-semibold">
                     {t("faq.pageTitle")}

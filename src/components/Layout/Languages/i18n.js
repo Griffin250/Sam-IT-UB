@@ -178,6 +178,47 @@ const resources = {
   "p": "We believe in building lasting partnerships with our clients. Our team is dedicated to providing personalized solutions that meet your - unique business needs, delivering exceptional service and support every step of the way."
   },
   
+  //English Translation for blog section
+"blog" :{
+  "blogTitle": "Latest News and Blog Posts",
+  "blogDesc": "Stay up to date with what's happening with our latest posts ",
+  "blog_1_h2": "Our Office Location ",
+  "blog_1_h3": " Welcom to our offices in Arendal",
+  "blog_1_p1": "  At Sam-IT UB, we're excited to announce our expanded presence in Arendal, where we continue to offer IT support and solutions to everyone.",
+  "blog_1_p2": " Our new office in Arendal serves as a hub for innovation and collaboration, where... ",
+  "blogLink": "Learn More...",
+
+"blog_2_h2": " User Support",
+"blog_2_h3": "5 Common IT Problems and How to Solve them ",
+"blog_2_p": " Sam-IT UB provides reliable IT support services, including troubleshooting, software installation, and cybersecurity. Our team ensures smooth and secure operations... ",
+
+
+
+"blog_3_h2": " Upcoming Event!",
+"blog_3_h3": " IT Networking Event at Sam Eyde Vgs ",
+"blog_3_p": " We at Sam-IT UB are excited to announce that we will be present at the TECH scene's new offices at Sam Eyde High School, where we will... ",
+
+"blog_4_h2": "The Future of IT ",
+"blog_4_h3": " Trends to Watch in 2024 and Beyond",
+"blog_4_p": "  As technology evolves rapidly, staying ahead of key IT trends in 2024 and beyond is crucial for businesses and individuals to maintain a competitive edge and therefore, Sam-IT is...",
+
+"blog_5_h2": "Are You Hiring an IPS? ",
+"blog_5_h3": " What to Look for When Choosing an IT Service Provider",
+"blog_5_p": "  It is important to find an employer that aligns with your values and work style. If you value work-life balance, you should...",
+
+"blog_6_h2": "Upcoming Event! ",
+"blog_6_h3": "  Slush'D Energy 2025-Are Your Coming?",
+"blog_6_p": " Digin is co-hosting Slush'D Energy on March 12, 2025, in Mandal, bringing together startups, investors, and industry leaders to focus on sustainability, clean-tech, energy, AI...",
+
+"blog_7_h2": " Sam-IT UB Day",
+"blog_7_h3": "Launching Our Project Posters to the Public ",
+"blog_7_p": " Sam-IT UB are thrilled to announce that we will soon begin distributing our project posters as part of our advertising campaign.... ",
+
+"blog_8_h2": "Cyber Security ",
+"blog_8_h3": " Cybersecurity Best Practices for Businesses ",
+"blog_8_p": "  In today’s digital world, protecting your business from cyber threats is vital. Sam-IT UB wants to share key practices to secure data, prevent breaches, and keep your business...",
+  },
+
   //English Translation for discord banner
   "discordBanner":{
     "title1": "POWERED BY INNOVATION",
@@ -364,7 +405,45 @@ const resources = {
   "4p2": "Vi tilbyr flerlags beskyttelse, overvåking og proaktiv trusselhåndtering for å holde dataene dine og brukerne dine trygge mot sårbarheter.",
 
 },
+//Norsk Translation for blog section
+"blog" :{
+"blogTitle": " Siste Nyheter og Blogginnlegg ",
+"blogDesc": "Hold deg oppdatert på hva som skjer med våre siste innlegg ",
+"blog_1_h2": "Vårt kontorsted",
+"blog_1_h3": "Velkommen til våre kontorer i Arendal",
+"blog_1_p1": "På Sam-IT UB er vi glade for å kunngjøre vår utvidede tilstedeværelse i Arendal, hvor vi fortsetter å tilby IT-støtte og løsninger til alle.",
+"blog_1_p2": "Vårt nye kontor i Arendal fungerer som et knutepunkt for innovasjon og samarbeid, hvor... ",
+"blogLink": "Les Mer...",
 
+"blog_2_h2": " Brukerstøtte",
+"blog_2_h3": " 5 Vanlige IT-problemer og hvordan du løser dem",
+"blog_2_p": "Sam-IT UB tilbyr pålitelige IT-støttetjenester, inkludert feilsøking, programvareinstallasjon og cybersikkerhet. Teamet vårt sørger for jevn og sikker drift...",
+
+"blog_3_p1": " ",
+"blog_3_h3": " IT Nettverksarrangement på Sam Eyde Vgs",
+"blog_3_h2": "Kommende Arrangement! ",
+"blog_3_p": " Vi i Sam-IT UB er glade for å annonsere at vi vil være tilstede på TECH-scenens nye kontorer ved Sam Eyde videregående skole, hvor vi...",
+
+"blog_4_h2": "Fremtiden til IT ",
+"blog_4_h3": "Trender å se i 2024 og utover ",
+"blog_4_p": " Ettersom teknologien utvikler seg raskt, er det avgjørende for bedrifter og enkeltpersoner å holde seg i forkant av viktige IT-trender i 2024 og fremover for å opprettholde et konkurransefortrinn, og derfor er Sam-IT...",
+
+"blog_5_h2": "Ansetter du en IPS? ",
+"blog_5_h3": "Hva du bør se etter når du velger en IT-tjenesteleverandør ",
+"blog_5_p": " Det er viktig å finne en arbeidsgiver som er i tråd med dine verdier og arbeidsstil. Hvis du verdsetter balanse mellom arbeid og privatliv, bør du...",
+
+"blog_6_h2": " Kommende Arrangement!",
+"blog_6_h3": "Slush'D Energy 2025 – Kommer du? ",
+"blog_6_p": " Digin er vertskap for Slush'D Energy 12. mars 2025 i Mandal, og samler startups, investorer og industriledere for å fokusere på bærekraft, clean-tech, energi, AI...",
+
+"blog_7_h2": " Sam-IT UB-dagen",
+"blog_7_h3": "Lansering av prosjektplakatene våre for publikum ",
+"blog_7_p": " Sam-IT UB er glade for å kunngjøre at vi snart vil begynne å distribuere prosjektplakatene våre som en del av vår reklamekampanje....",
+
+"blog_8_h2": " Cyber Sikkerhet",
+"blog_8_h3": " Beste praksis for cybersikkerhet for bedrifter",
+"blog_8_p": " I dagens digitale verden er det viktig å beskytte virksomheten din mot cybertrusler. Sam-IT UB ønsker å dele nøkkelpraksis for å sikre data, forhindre brudd og holde virksomheten din... ",
+},
 
 //Norsk Translation for discord banner
     "discordBanner":{
