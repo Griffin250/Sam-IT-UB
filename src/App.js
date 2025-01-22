@@ -16,6 +16,7 @@ import Support from "./pages/Support";
 import 'primereact/resources/themes/saga-blue/theme.css'; 
 import 'primereact/resources/primereact.min.css';         
 import 'primeicons/primeicons.css';   
+import FaqPage from "./pages/Faq";
 
 
 const App = () => {
@@ -46,6 +47,7 @@ const AppContent = () => {
         <Route path="*" element={<NotFound/>}/>
         <Route path="/contactForm" element={<ContactForm />} />
         <Route path="/blogPost" element={<BlogPosts />} />
+        <Route path="/faq" element={<FaqPage/>}/>
       </Routes>
       {!hideFooter && <Footer />}
     </div>
