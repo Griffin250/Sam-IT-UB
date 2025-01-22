@@ -323,6 +323,7 @@ const Navbar = () => {
                 Services <FontAwesomeIcon icon={faChevronDown} />
               </li>
             </NavLink>
+
             <NavLink
               to="/support"
               onClick={() => {
@@ -348,6 +349,20 @@ const Navbar = () => {
                 Contact
               </li>
             </NavLink>
+
+            <NavLink
+              to="/faq"
+              onClick={() => {
+                scrollToTop();
+                setMobileMenuOpen(false);
+              }}
+            >
+              {" "}
+              <li className="hover:text-white font-bold hover:bg-gray-700 p-2 -mt-4 rounded-md cursor-pointer">
+                FAQ 
+              </li>
+            </NavLink>
+
           </ul>
           <NavLink
             to={"/loginSignup"}
