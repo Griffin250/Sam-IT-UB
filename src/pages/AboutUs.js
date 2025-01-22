@@ -184,13 +184,13 @@ const AboutUs = () => {
           {/* Call to Action */}
           <section className="bg-gradient-to-br from-blue-200 via-gray-100 to-blue-200 text-gray-700 py-12 text-center">
             <h2 className="text-3xl font-bold mb-4">{t("about_us.cta_title")}</h2>
-            <p className="text-lg mb-6">{t("about_us.cta_text")}</p>
+            <p className="text-lg mb-6">{t("about_us.cta_desc")}</p>
             <NavLink
               to="/contact"
               onClick={scrollToTop}
               className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition"
             >
-              {t("about_us.contact_button")}
+              {t("about_us.contact_us")}
             </NavLink>
           </section>
         </>

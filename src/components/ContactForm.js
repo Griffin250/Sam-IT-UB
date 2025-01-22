@@ -59,7 +59,7 @@ const ContactForm = () => {
             href="mailto:sam-it-ub@hotmail.com"
             className="hover:text-orange-600 hover:translate-x-1 hover:transition-all"
           >
-            sam-it-ub.helpdesk.no{" "}
+            sam-it-ub@helpdesk.no{" "}
           </a>
           <br />
           <a href="tel:+47 429-474 90" className="hover:text-orange-600 hover:translate-x-1 hover:transition-all">
