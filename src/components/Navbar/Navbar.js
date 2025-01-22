@@ -145,10 +145,10 @@ const Navbar = () => {
               {isSupportDropdownOpen && (
                 <div className="absolute left-0 mt-2 bg-gray-900 text-white rounded-md shadow-lg w-40 z-10">
                   <ul className="flex flex-col">
-                    <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer ">
-                      <NavLink to="/faq">
+                    <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer " >
+                      <NavLink to="/faq" onClick={scrollToTop}>
                         {" "}
-                        <a href="faq" className="text-sm">
+                        <a href="faq" className="text-sm" >
                           FAQ
                         </a>
                       </NavLink>
