@@ -56,6 +56,10 @@ const Navbar = () => {
     });
   };
 
+  const closeDropdown = () =>{
+    setIsSupportDropdownOpen(false);
+  }
+
   const { i18n } = useTranslation();
   const languageDropdownRef = useRef(null); // Language dropdown ref
     const supportDropdownRef = useRef(null);
@@ -148,7 +152,7 @@ const Navbar = () => {
                     <li className="hover:bg-gray-700 p-2 rounded-md cursor-pointer " >
                       <NavLink to="/faq" onClick={scrollToTop}>
                         {" "}
-                        <a href="faq" className="text-sm" >
+                        <a href="faq" className="text-sm" onClick={closeDropdown}>
                           FAQ
                         </a>
                       </NavLink>
