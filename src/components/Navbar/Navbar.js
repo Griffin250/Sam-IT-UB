@@ -358,6 +358,7 @@ const Navbar = () => {
               to="/faq"
               onClick={() => {
                 scrollToTop();
+                closeDropdown();
                 setMobileMenuOpen(false);
               }}
             >
